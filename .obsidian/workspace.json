@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "kerb",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -196,6 +197,8 @@
   },
   "active": "35b80230adc670a0",
   "lastOpenFiles": [
+    "CPTS Notes/Reconnaissance & Enumeration/RPC 135.md",
+    "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Utilities/SQLMap.md",
     "CPTS Notes/Exploitation/Web Attacks/SQL Injection.md",
     "CPTS Notes/Utilities/Web Proxies.md",
@@ -212,7 +215,6 @@
     "README.md",
     "CPTS Notes/Reconnaissance & Enumeration/DNS 53.md",
     "CPTS Notes/Reconnaissance %26 Enumeration",
-    "CPTS Notes/README.md",
-    "CPTS Notes/AD/Notes.md"
+    "CPTS Notes/README.md"
   ]
 }
