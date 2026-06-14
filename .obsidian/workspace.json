@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/Utilities/SQLMap.md",
+                "file": "CPTS Notes/AD/Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQLMap"
+              "title": "Notes"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/SQLMap.md",
+                "file": "CPTS Notes/AD/Notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SQLMap"
+              "title": "Outline of Notes"
             }
           },
           {
@@ -196,8 +196,8 @@
   },
   "active": "35b80230adc670a0",
   "lastOpenFiles": [
-    "CPTS Notes/Exploitation/Web Attacks/SQL Injection.md",
     "CPTS Notes/Utilities/SQLMap.md",
+    "CPTS Notes/Exploitation/Web Attacks/SQL Injection.md",
     "CPTS Notes/Utilities/Web Proxies.md",
     "CPTS Notes/Exploitation/Web Attacks/XXE.md",
     "CPTS Notes/Exploitation/Web Attacks/XSS.md",
