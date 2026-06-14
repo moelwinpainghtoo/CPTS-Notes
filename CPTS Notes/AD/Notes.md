@@ -1,4 +1,12 @@
 
+## Getting TGT
+
+```bash
+impacket-getTGT checkpoint.htb/alex.turner:'Checkpoint2024!'
+export KRB5CCNAME=alex.turner.ccache
+klist
+```
+
 ## Misc
 
 ```bash
