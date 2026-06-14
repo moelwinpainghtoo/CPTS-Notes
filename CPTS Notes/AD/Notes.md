@@ -7,6 +7,16 @@ export KRB5CCNAME=alex.turner.ccache
 klist
 ```
 
+## Pivoting
+
+```bash
+# Terminal 1 - Ligolo server
+sudo ./proxy -selfcert
+# In ligolo console:
+ifcreate --name ligolo
+route_add --name ligolo --route 192.168.2.0/24
+```
+
 ## Misc
 
 ```bash
