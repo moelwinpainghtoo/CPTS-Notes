@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/AD/Notes.md",
+                "file": "CPTS Notes/Utilities/SQLMap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notes"
+              "title": "SQLMap"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "kerb",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -157,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/AD/Notes.md",
+                "file": "CPTS Notes/Utilities/SQLMap.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Notes"
+              "title": "Outline of SQLMap"
             }
           },
           {
@@ -197,8 +196,8 @@
   },
   "active": "35b80230adc670a0",
   "lastOpenFiles": [
-    "CPTS Notes/Reconnaissance & Enumeration/RPC 135.md",
     "CPTS Notes/AD/Notes.md",
+    "CPTS Notes/Reconnaissance & Enumeration/RPC 135.md",
     "CPTS Notes/Utilities/SQLMap.md",
     "CPTS Notes/Exploitation/Web Attacks/SQL Injection.md",
     "CPTS Notes/Utilities/Web Proxies.md",
