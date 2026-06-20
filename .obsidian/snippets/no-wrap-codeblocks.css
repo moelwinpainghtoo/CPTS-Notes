@@ -1,0 +1,13 @@
+/* Wrap code blocks in Live Preview and Reading View */
+
+.cm-content .HyperMD-codeblock,
+.markdown-rendered pre code {
+    white-space: pre-wrap !important;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+/* Hide horizontal scrollbar */
+.markdown-rendered pre {
+    overflow-x: hidden !important;
+}
