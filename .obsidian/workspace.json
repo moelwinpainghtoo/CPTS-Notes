@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/Utilities/Credential Harvesting.md",
-                "mode": "preview",
+                "file": "CPTS Notes/Exploitation/Web Attacks/Login Brute Force.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Credential Harvesting"
+              "title": "Login Brute Force"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Credential Harvesting.md",
+                "file": "CPTS Notes/Exploitation/Web Attacks/Login Brute Force.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Credential Harvesting"
+              "title": "Outline of Login Brute Force"
             }
           },
           {
@@ -196,6 +196,8 @@
   },
   "active": "35b80230adc670a0",
   "lastOpenFiles": [
+    "CPTS Notes/Utilities/Credential Harvesting.md",
+    "CPTS Notes/Exploitation/Web Attacks/Login Brute Force.md",
     "CPTS Notes/Reconnaissance & Enumeration/Web Enumeration.md",
     "CPTS Notes/Reconnaissance & Enumeration/Service Enumeration/DNS 53.md",
     "CPTS Notes/Reconnaissance & Enumeration/Service Enumeration/NFS 111,2049.md",
