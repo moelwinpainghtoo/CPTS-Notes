@@ -158,8 +158,28 @@ Drupal supports three types of users by default.
 # check website uses drupal 
 curl -s http://drupal.inlanefreight.local | grep Drupal
 
-
+# check version (latest version returns 404)
+curl -s http://drupal-acc.inlanefreight.local/CHANGELOG.txt | grep -m2 ""
 ```
+
+### droopescan
+
+### Installation
+
+```bash
+git clone https://github.com/droope/droopescan.git && \  
+cd droopescan && \  
+uv venv -p python3.11 .venv && \  
+source .venv/bin/activate && \  
+uv pip install -r requirements.txt && \  
+uv pip install -e . && \  
+./droopescan scan --help
+```
+
+```bash
+droopescan scan drupal -u http://drupal.inlanefreight.local
+```
+
 
 
 
