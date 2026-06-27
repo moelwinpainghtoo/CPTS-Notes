@@ -29,13 +29,13 @@
 ### 💥 Exploitation
 
 #### Web Attacks
-- [Command Injection](CPTS%20Notes/Exploitation/Web%20Attacks/Command%20Injection.md)
-- [File Inclusion](CPTS%20Notes/Exploitation/Web%20Attacks/File%20Inclusion.md)
-- [File Upload](CPTS%20Notes/Exploitation/Web%20Attacks/File%20Upload.md)
-- [HTTP Verb Tampering](CPTS%20Notes/Exploitation/Web%20Attacks/HTTP%20Verb%20Tempering.md)
-- [IDOR](CPTS%20Notes/Exploitation/Web%20Attacks/IDOR.md)
-- [XSS](CPTS%20Notes/Exploitation/Web%20Attacks/XSS.md)
-- [XXE](CPTS%20Notes/Exploitation/Web%20Attacks/XXE.md)
+- [Command Injection](Command%20Injection.md)
+- [File Inclusion](File%20Inclusion.md)
+- [File Upload](File%20Upload.md)
+- [HTTP Verb Tampering](HTTP%20Verb%20Tempering.md)
+- [IDOR](IDOR.md)
+- [XSS](XSS.md)
+- [XXE](XXE.md)
 
 ---
 
