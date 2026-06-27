@@ -122,3 +122,44 @@ https://github.com/ajnik/joomla-bruteforce.git
 sudo python3 joomla-brute.py -u http://dev.inlanefreight.local -w /usr/share/metasploit-framework/data/wordlists/http_default_pass.txt -usr admin
 ```
 
+# Drupal
+
+## Discovery / Footprinting
+
+- `Powered by Drupal` text or Drupal logo
+- `CHANGELOG.txt` or `README.txt` files
+- Drupal metadata in page source
+- Drupal paths such as `/node` in `robots.txt`
+## Common Paths
+
+```bash
+/robots.txt
+/CHANGELOG.txt
+/README.txt
+/user/login
+/user/register
+/user/password
+/node/1
+```
+
+## User Roles
+
+Drupal supports three types of users by default.
+
+1. Administrator: This user has complete control over the Drupal website.
+    
+2. Authenticated User: These users can log in and perform actions such as adding or editing content depending on their assigned permissions.
+    
+3. Anonymous: These are regular website visitors. By default, anonymous users are only allowed to read public content.
+
+## Enumeration
+
+```bash
+# check website uses drupal 
+curl -s http://drupal.inlanefreight.local | grep Drupal
+
+
+```
+
+
+
