@@ -35,8 +35,7 @@
               "title": "Application Exploitation"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Application Exploitation"
+              "title": "Outline of Application Enumeration"
             }
           },
           {
@@ -209,12 +208,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0ad3b72cef29845d",
+  "active": "5b98a8345a82feb0",
   "lastOpenFiles": [
+    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "README.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RPC 135.md",
-    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/Utilities/Adding hosts file.md",
     "CPTS Notes/03 - Post Exploitation",
     "CPTS Notes/Utilities/Custom Wordlists.md",

@@ -180,6 +180,48 @@ uv pip install -e . && \
 droopescan scan drupal -u http://drupal.inlanefreight.local
 ```
 
+# Tomcat
+
+## General Folder Structure
+
+```bash
+├── bin
+├── conf
+│   ├── catalina.policy
+│   ├── catalina.properties
+│   ├── context.xml
+│   ├── tomcat-users.xml
+│   ├── tomcat-users.xsd
+│   └── web.xml
+├── lib
+├── logs
+├── temp
+├── webapps
+│   ├── manager
+│   │   ├── images
+│   │   ├── META-INF
+│   │   └── WEB-INF
+|   |       └── web.xml
+│   └── ROOT
+│       └── WEB-INF
+└── work
+    └── Catalina
+        └── localhost
+```
+
+## Version Enumeration
+
+> If the server is operating behind a reverse proxy, requesting an invalid page should reveal the server and version.
+
+```bash
+# call invalid page
+http://app-dev.inlanefreight.local:8080/invalid
+# check /docs
+curl -s http://app-dev.inlanefreight.local:8080/docs/ | grep Tomcat
+```
+
+## Enumeration
+
 
 
 
