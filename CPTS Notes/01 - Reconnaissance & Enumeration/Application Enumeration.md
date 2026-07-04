@@ -182,31 +182,49 @@ droopescan scan drupal -u http://drupal.inlanefreight.local
 
 # Tomcat
 
+Checklist:
+- tomcat:tomcat, admin:admin (try default passwords)
 ## General Folder Structure
 
 ```bash
-├── bin
-├── conf
+tomcat/
+├── bin/
+├── conf/
 │   ├── catalina.policy
 │   ├── catalina.properties
 │   ├── context.xml
 │   ├── tomcat-users.xml
 │   ├── tomcat-users.xsd
 │   └── web.xml
-├── lib
-├── logs
-├── temp
-├── webapps
-│   ├── manager
-│   │   ├── images
-│   │   ├── META-INF
-│   │   └── WEB-INF
-|   |       └── web.xml
-│   └── ROOT
-│       └── WEB-INF
-└── work
-    └── Catalina
-        └── localhost
+├── lib/
+├── logs/
+├── temp/
+├── webapps/
+│   ├── manager/
+│   │   ├── images/
+│   │   ├── META-INF/
+│   │   └── WEB-INF/
+│   │       └── web.xml
+│   ├── ROOT/
+│   │   └── WEB-INF/
+│   └── customapp/
+│       ├── images/
+│       ├── index.jsp
+│       ├── META-INF/
+│       │   └── context.xml
+│       ├── status.xsd
+│       └── WEB-INF/
+│           ├── web.xml
+│           ├── jsp/
+│           │   └── admin.jsp
+│           ├── lib/
+│           │   └── jdbc_drivers.jar
+│           └── classes/
+│               └── AdminServlet.class
+├── work/
+│   └── Catalina/
+│       └── localhost/
+└── temp/
 ```
 
 ## Version Enumeration
@@ -214,9 +232,8 @@ droopescan scan drupal -u http://drupal.inlanefreight.local
 > If the server is operating behind a reverse proxy, requesting an invalid page should reveal the server and version.
 
 ```bash
-# call invalid page
+# check invalid endpoint
 http://app-dev.inlanefreight.local:8080/invalid
-# check /docs
 curl -s http://app-dev.inlanefreight.local:8080/docs/ | grep Tomcat
 ```
 
