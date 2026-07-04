@@ -237,7 +237,77 @@ http://app-dev.inlanefreight.local:8080/invalid
 curl -s http://app-dev.inlanefreight.local:8080/docs/ | grep Tomcat
 ```
 
-## Enumeration
+## Important files to check
+
+```bash
+web.xml
+# used to allow or disallow access to the `/manager` and `host-manager` admin pages.
+tomcat-users.xml
+```
+
+## Directory Bruteforce
+
+```bash
+gobuster dir -u http://web01.inlanefreight.local:8180/ -w /usr/share/dirbuster/wordlists/directory-list-2.3-small.txt
+```
+
+# Jenkins
+
+- Jenkins runs on Tomcat port 8080 by default. It also utilizes port 5000 to attach slave servers.
+
+```bash
+# default creds
+admin:admin
+```
+
+# Splunk
+
+Note: If ssl/http from Nmap result, uses https://host:8000
+
+- The Splunk web server runs by default on port 8000. Nmap scan will also reveal it.
+- Splunk has multiple ways of running code, such as server-side Django applications, REST endpoints, scripted inputs, and alerting scripts. A common method of gaining remote code execution on a Splunk server is through the use of a scripted input
+## Default Creds
+
+```bash
+# username admin
+# possible passowrds
+changeme
+admin
+Welcome
+Welcome1
+Password123
+```
+
+## Version Enumeration
+
+```bash
+# inspect the page with this keyword (after login)
+version": "
+```
+
+## CVEs
+
+- https://www.exploit-db.com/exploits/40895
+- https://www.cvedetails.com/vulnerability-list/vendor_id-10963/Splunk.html
+
+# PRTG Network Monitor
+
+## CVEs
+
+- CVE-2018-9276 before version 18.2.39
+
+## Default Creds
+
+```bash
+prtgadmin:prtgadmin
+prtgadmin:Password123
+```
+
+## Version Enumeration
+
+```bash
+curl -s http://10.129.201.50:8080/index.htm -A "Mozilla/5.0 (compatible; MSIE 7.01; Windows NT 5.0)" | grep version
+```
 
 
 
