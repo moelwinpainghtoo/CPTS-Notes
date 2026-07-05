@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/NetBIOS 137,138,139.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SMB 445"
+              "title": "NetBIOS 137,138,139"
             }
           },
           {
@@ -170,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/NetBIOS 137,138,139.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SMB 445"
+              "title": "Outline of NetBIOS 137,138,139"
             }
           },
           {
@@ -210,6 +210,7 @@
   },
   "active": "5b98a8345a82feb0",
   "lastOpenFiles": [
+    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/C2/Sliver.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
@@ -239,7 +240,6 @@
     "CPTS Notes/02 - Exploitation/Web Exploitation/File Upload.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Command Injection.md",
     "CPTS Notes/Reconnaissance %26 Enumeration/DNS 53.md",
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/FTP 21.md",
     "CPTS Notes/Reconnaissance %26 Enumeration"
   ]
 }
