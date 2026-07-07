@@ -313,6 +313,20 @@ curl -s http://10.129.201.50:8080/index.htm -A "Mozilla/5.0 (compatible; MSIE 7.
 
 https://www.cvedetails.com/vendor/2292/Osticket.html
 
-``
-```
+1. Identify osTicket: OSTSESSID cookie, “powered by osTicket”, /open.php, /scp/login.php.
+2. Create ticket if allowed and check if a temporary internal email/ticket email is assigned.
+3. Try scoped leaked credentials from DeHashed against osTicket and other exposed portals.
+4. Review tickets for password reset details, standard passwords, VPN info, usernames, and emails.
+5. Export/enumerate address book or staff/user emails if access allows.
+6. Check detected osTicket version against known issues, especially CVE-2020-24881 SSRF in osTicket 1.14.1.
+7. Check closed tickets for credentials harvesting. ***
+8. Use email address if the Username is not working. ***
+9. Test credential reuse or password spraying only when explicitly authorized.
 
+# GitLab
+
+## Enumeration
+
+```bash
+gitlab.company.com
+```
