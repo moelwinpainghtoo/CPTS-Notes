@@ -333,7 +333,7 @@ https://www.cvedetails.com/vendor/2292/Osticket.html
 [Version 13.9.3](https://www.exploit-db.com/exploits/49944)
 [Version 13.10.2](https://www.exploit-db.com/exploits/49951)
 
-- If cannot login, enumerate user with this: https://www.exploit-db.com/exploits/49821
+- If cannot login, enumerate user with this: https://www.exploit-db.com/exploits/49821, https://github.com/dpgg101/GitLabUserEnum.
 - Try to register an account to access.
 - There's not much we can do against GitLab without knowing the version number or being logged in.
 - The only way to footprint the GitLab version number in use is by browsing to the /help page when logged in.
