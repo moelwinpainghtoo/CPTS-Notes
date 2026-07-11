@@ -251,6 +251,13 @@ tomcat-users.xml
 gobuster dir -u http://web01.inlanefreight.local:8180/ -w /usr/share/dirbuster/wordlists/directory-list-2.3-small.txt
 ```
 
+## CVE-2019-0232
+
+Only happens on Windows targets.
+- Apache Tomcat 9.0.0.M1 to 9.0.17
+- Apache Tomcat 8.5.0 to 8.5.39
+- Apache Tomcat 7.0.0 to 7.0.93
+
 # Jenkins
 
 - Jenkins runs on Tomcat port 8080 by default. It also utilizes port 5000 to attach slave servers.
