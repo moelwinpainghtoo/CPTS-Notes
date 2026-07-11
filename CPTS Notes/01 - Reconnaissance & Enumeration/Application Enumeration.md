@@ -375,12 +375,12 @@ It's important to note that default ports can be changed during installation or 
 |8500|SSL|Used for server communication via Secure Socket Layer (SSL).|
 |5500|Server Monitor|Used for remote administration of the ColdFusion server.|
 
-## Enumeration
+## Version Enumeration
 
 - **Ports:** Scan `80` and `443`; use Nmap service detection.
 - **Extensions:** Look for `.cfm` and `.cfc` files.
 - **Headers:** Check for `Server: ColdFusion` or `X-Powered-By: ColdFusion`.
 - **Errors:** Trigger errors and look for ColdFusion tags, functions, or paths.
-- **Default paths:** Check:
+- **Default paths:** Check Version:
     - `/admin.cfm`
     - `/CFIDE/administrator/index.cfm`
