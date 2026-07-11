@@ -353,6 +353,7 @@ The first thing we should try is browsing to `/explore`. Navigate `/help` for v
 
 # Cold Fusion
 
+- check version
 ## CVEs
 
 1. CVE-2021-21087: Arbitrary disallow of uploading JSP source code
@@ -363,6 +364,8 @@ The first thing we should try is browsing to `/explore`. Navigate `/help` for v
 
 ## Default Ports
 
+It's important to note that default ports can be changed during installation or configuration.
+
 |Port Number|Protocol|Description|
 |---|---|---|
 |80|HTTP|Used for non-secure HTTP communication between the web server and web browser.|
@@ -371,3 +374,13 @@ The first thing we should try is browsing to `/explore`. Navigate `/help` for v
 |25|SMTP|Simple Mail Transfer Protocol (SMTP) is used for sending email messages.|
 |8500|SSL|Used for server communication via Secure Socket Layer (SSL).|
 |5500|Server Monitor|Used for remote administration of the ColdFusion server.|
+
+## Enumeration
+
+- **Ports:** Scan `80` and `443`; use Nmap service detection.
+- **Extensions:** Look for `.cfm` and `.cfc` files.
+- **Headers:** Check for `Server: ColdFusion` or `X-Powered-By: ColdFusion`.
+- **Errors:** Trigger errors and look for ColdFusion tags, functions, or paths.
+- **Default paths:** Check:
+    - `/admin.cfm`
+    - `/CFIDE/administrator/index.cfm`
