@@ -350,3 +350,24 @@ gitlab.company.com
 
 The first thing we should try is browsing to `/explore`. Navigate `/help` for version number.
 ```
+
+# Cold Fusion
+
+## CVEs
+
+1. CVE-2021-21087: Arbitrary disallow of uploading JSP source code
+2. CVE-2020-24453: Active Directory integration misconfiguration
+3. CVE-2020-24450: Command injection vulnerability
+4. CVE-2020-24449: Arbitrary file reading vulnerability
+5. CVE-2019-15909: Cross-Site Scripting (XSS) Vulnerability
+
+## Default Ports
+
+|Port Number|Protocol|Description|
+|---|---|---|
+|80|HTTP|Used for non-secure HTTP communication between the web server and web browser.|
+|443|HTTPS|Used for secure HTTP communication between the web server and web browser. Encrypts the communication between the web server and web browser.|
+|1935|RPC|Used for client-server communication. Remote Procedure Call (RPC) protocol allows a program to request information from another program on a different network device.|
+|25|SMTP|Simple Mail Transfer Protocol (SMTP) is used for sending email messages.|
+|8500|SSL|Used for server communication via Secure Socket Layer (SSL).|
+|5500|Server Monitor|Used for remote administration of the ColdFusion server.|
