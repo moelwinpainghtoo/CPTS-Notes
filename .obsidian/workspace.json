@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RPC 135.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Application Exploitation"
+              "title": "RPC 135"
             }
           },
           {
@@ -170,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RPC 135.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Application Exploitation"
+              "title": "Outline of RPC 135"
             }
           },
           {
@@ -210,8 +210,8 @@
   },
   "active": "5b98a8345a82feb0",
   "lastOpenFiles": [
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+    "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/NetBIOS 137,138,139.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
