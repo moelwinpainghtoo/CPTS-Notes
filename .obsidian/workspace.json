@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/Utilities/File Transfer.md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Web Enumeration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "File Transfer"
+              "title": "Web Enumeration"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ffuf",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,12 +74,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "39decdfd43f15e5d",
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/File Transfer.md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Web Enumeration.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of File Transfer"
+              "title": "Outline of Web Enumeration"
             }
           },
           {
@@ -197,9 +197,9 @@
   },
   "active": "8995f5a7e5bece0a",
   "lastOpenFiles": [
+    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
-    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RPC 135.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/NetBIOS 137,138,139.md",
