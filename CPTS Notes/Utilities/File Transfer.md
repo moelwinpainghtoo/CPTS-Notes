@@ -480,10 +480,15 @@ Remove-PSSession $Session
 
 # RDP
 
+- To access the directory, we can connect to `\\tsclient\` under Network in File Explorer.
 ## Mounting a Linux Folder Using rdesktop
 
 ```bash
-
+rdesktop 10.10.10.132 -d HTB -u administrator -p 'Password0@' -r disk:linux='/home/user/rdesktop/files'
 ```
 
 ## Mounting a Linux Folder Using xfreerdp
+
+```bash
+xfreerdp /v:10.10.10.132 /d:HTB /u:administrator /p:'Password0@' /drive:linux,/home/plaintext/htb/academy/filetransfer
+```
