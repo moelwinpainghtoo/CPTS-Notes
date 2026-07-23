@@ -35,8 +35,7 @@
               "title": "Windows Privilege Escalation"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+                "file": "CPTS Notes/Utilities/File Transfer.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Windows Privilege Escalation"
+              "title": "Outline of File Transfer"
             }
           },
           {
@@ -209,10 +208,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0431eaae405d10a6",
+  "active": "4ab18e2466770fab",
   "lastOpenFiles": [
-    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Web Enumeration.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
