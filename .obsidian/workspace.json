@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Windows Privilege Escalation"
             }
           }
         ],
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of Windows Privilege Escalation"
             }
           },
           {
@@ -209,8 +209,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0ad3b72cef29845d",
+  "active": "0431eaae405d10a6",
   "lastOpenFiles": [
+    "README.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "Untitled",
     "CPTS Notes/Utilities/File Transfer.md",
@@ -225,7 +226,6 @@
     "CPTS Notes/C2",
     "CPTS Notes/Untitled.md",
     "C2",
-    "README.md",
     "CPTS Notes/Utilities/Adding hosts file.md",
     "CPTS Notes/03 - Post Exploitation",
     "CPTS Notes/Utilities/Custom Wordlists.md",
