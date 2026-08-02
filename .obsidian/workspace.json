@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "credential hunting",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +91,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -213,8 +214,9 @@
   },
   "active": "0431eaae405d10a6",
   "lastOpenFiles": [
-    "CPTS Notes/Utilities/File Transfer.md",
+    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/DNS 53.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+    "CPTS Notes/Utilities/File Transfer.md",
     "README.md",
     "Untitled",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Web Enumeration.md",
@@ -237,7 +239,6 @@
     "CPTS Notes/02 - Exploitation/Web Exploitation/IDOR.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/SQL Injection.md",
     "CPTS Notes/Utilities/Credential Harvesting.md",
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/DNS 53.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/NFS 111,2049.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration",
     "CPTS Notes/Utilities/SQLMap.md",
