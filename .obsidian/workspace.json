@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+                "file": "CPTS Notes/AD/Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Windows Privilege Escalation"
+              "title": "Notes"
             }
           }
         ],
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+                "file": "CPTS Notes/AD/Notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -211,10 +211,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0ad3b72cef29845d",
+  "active": "0431eaae405d10a6",
   "lastOpenFiles": [
-    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/DNS 53.md",
     "README.md",
     "Untitled",
