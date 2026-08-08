@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/Utilities/Shells.md",
+                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shells"
+              "title": "Windows Privilege Escalation"
             }
           }
         ],
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Shells.md",
+                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -213,8 +213,8 @@
   },
   "active": "0431eaae405d10a6",
   "lastOpenFiles": [
-    "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Utilities/Shells.md",
+    "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/DNS 53.md",
