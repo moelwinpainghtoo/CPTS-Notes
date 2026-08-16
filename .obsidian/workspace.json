@@ -213,6 +213,9 @@
   },
   "active": "0431eaae405d10a6",
   "lastOpenFiles": [
+    "CPTS Notes/02 - Exploitation/Service Exploitation",
+    "CPTS Notes/02 - Exploitation/Untitled.md",
+    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
@@ -223,7 +226,6 @@
     "README.md",
     "Untitled",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Web Enumeration.md",
-    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RPC 135.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/NetBIOS 137,138,139.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
@@ -242,8 +244,6 @@
     "CPTS Notes/Utilities/Credential Harvesting.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/NFS 111,2049.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration",
-    "CPTS Notes/Utilities/SQLMap.md",
-    "CPTS Notes/Utilities/Web Proxies.md",
     "CPTS Notes/Reconnaissance %26 Enumeration"
   ]
 }
