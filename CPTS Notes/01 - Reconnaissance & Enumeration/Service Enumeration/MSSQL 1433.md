@@ -1,3 +1,18 @@
+
+### Interaction
+
+#### Linux
+
+```bash
+sqsh -S 10.129.20.13 -U username -P Password123
+```
+
+#### Windows
+
+```bash
+sqlcmd -S 10.129.20.13 -U username -P Password123
+```
+
 ### Nmap
 
 ```bash
