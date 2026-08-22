@@ -86,3 +86,30 @@ grep -rnE '^\-{5}BEGIN [A-Z0-9]+ PRIVATE KEY\-{5}$' /* 2>/dev/null
 # Tell whether an SSH key is encrypted or not
 ssh-keygen -yf ~/.ssh/id_ed25519
 ```
+
+**Cracking Protected Office Files**
+
+```bash
+office2john Confidential.xlsx > c.hash
+john --wordlist=/usr/share/wordlists/rockyou.txt c.hash
+```
+
+# Cracking Protected Archives
+
+```bash
+# possible extensions for archives
+curl -s https://fileinfo.com/filetypes/compressed | html2text | awk '{print tolower($1)}' | grep "\." | tee -a compressed_ext.txt
+```
+
+## Cracking OpenSSL encrypted GZIP files
+
+The following one-liner may produce several GZIP-related error messages, which can be safely ignored. If the correct password list is used, as in this example, we will see another file successfully extracted from the archive.
+
+```bash
+# check file is encrypted with openssl
+file GZIP.gzip
+# GZIP.gzip: openssl enc'd data with salted password
+
+# crack
+for i in $(cat rockyou.txt);do openssl enc -aes-256-cbc -d -in GZIP.gzip -k $i 2>/dev/null| tar xz;done
+```
