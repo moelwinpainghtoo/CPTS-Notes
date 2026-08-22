@@ -116,6 +116,12 @@ for i in $(cat rockyou.txt);do openssl enc -aes-256-cbc -d -in GZIP.gzip -k $i 2
 
 ## BitLocker-encrypted drives
 
+**Check Encrypted or Not**: If it returns `$bitlocker$...` hashes, the VHD contains a BitLocker-encrypted volume. If no output appears, it is likely not BitLocker-encrypted or the VHD format is unsupported.
+
+```bash
+bitlocker2john -i Backup.vhd | grep 'bitlocker\$'
+```
+
 Extracts BitLocker password and recovery-key hashes from an encrypted VHD file and saves them to `backup.hashes` for offline cracking.
 
 ```bash
@@ -126,7 +132,9 @@ cat backup.hash
 
 ```bash
 # crack
-hashcat -a 0 -m 22100 '$bitlocker$0$16$02b329c0453b9273f2fc1b927443b5fe$1048576$12$00b0a67f961dd80103000000$60$d59f37e70696f7eab6b8f95ae93bd53f3f7067d5e33c0394b3d8e2d1fdb885cb86c1b978f6cc12ed26de0889cd2196b0510bbcd2a8c89187ba8ec54f' /usr/share/wordlists/rockyou.txt
+hashcat -a 0 -m 22100 hash /usr/share/wordlists/rockyou.txt
+
+john --format=bitlocker --wordlist=/usr/share/wordlists/rockyou.txt backup.hash
 ```
 
 ### Mounting BitLocker-encrypted drives in Windows
