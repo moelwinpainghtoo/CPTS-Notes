@@ -40,3 +40,42 @@ grep -E '^.{6,}$' jane.txt \
 | grep -E '[0-9]' \
 | grep -E '([!@#$%^&*].*){2,}' \
 > jane-filtered.txt
+```
+
+# Hashcat
+
+- https://hashcat.net/wiki/doku.php?id=rule_based_attack
+
+```bash
+cat custom.rule
+
+:
+c
+so0
+c so0
+sa@
+c sa@
+c sa@ so0
+$!
+$! c
+$! so0
+$! sa@
+$! c so0
+$! c sa@
+$! so0 sa@
+$! c so0 sa@
+```
+
+```bash
+hashcat --force password.list -r custom.rule --stdout | sort -u > mut_password.list
+```
+
+# Website Hunt (CeWL)
+
+Use to hunt down websites for password.
+
+- https://github.com/digininja/CeWL
+
+```bash
+cewl https://www.inlanefreight.com -d 4 -m 6 --lowercase -w inlane.wordlist
+```

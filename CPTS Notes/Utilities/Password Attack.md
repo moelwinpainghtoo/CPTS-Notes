@@ -71,40 +71,18 @@ hashcat -a 0 -m 0 1b0556a75770563578569ae21392630c /usr/share/wordlists/rockyou.
 hashcat -a 3 -m 0 1e293d6912d074c0fd15844d803400dd '?u?l?l?l?l?d?s'
 ```
 
-## Creating Custom Wordlist
+# Cracking Protected Files
 
-- https://hashcat.net/wiki/doku.php?id=rule_based_attack
+Locate encrypted files and SSH keys, extract their hashes using tools such as ssh2john.py, office2john.py, or pdf2john.py, then crack the extracted hashes offline with John the Ripper and a suitable wordlist.
 
 ```bash
-cat custom.rule
-
-:
-c
-so0
-c so0
-sa@
-c sa@
-c sa@ so0
-$!
-$! c
-$! so0
-$! sa@
-$! c so0
-$! c sa@
-$! so0 sa@
-$! c so0 sa@
+for ext in $(echo ".xls .xls* .xltx .od* .doc .doc* .pdf .pot .pot* .pp*");do echo -e "\nFile extension: " $ext; find / -name *$ext 2>/dev/null | grep -v "lib\|fonts\|share\|core" ;done
 ```
 
 ```bash
-hashcat --force password.list -r custom.rule --stdout | sort -u > mut_password.list
+# hunt SSH files
+grep -rnE '^\-{5}BEGIN [A-Z0-9]+ PRIVATE KEY\-{5}$' /* 2>/dev/null
+
+# Tell whether an SSH key is encrypted or not
+ssh-keygen -yf ~/.ssh/id_ed25519
 ```
-
-### CeWL
-
-- https://github.com/digininja/CeWL
-
-```bash
-cewl https://www.inlanefreight.com -d 4 -m 6 --lowercase -w inlane.wordlist
-```
-
-#
