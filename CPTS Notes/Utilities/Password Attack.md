@@ -149,8 +149,18 @@ Install `dislocker`, attach the VHD as a loop device, decrypt it, and mount the 
 sudo apt install dislocker
 sudo mkdir -p /media/bitlocker /media/bitlockermount
 
-sudo losetup -f -P Backup.vhd
-sudo dislocker /dev/loop0p2 -u'PASSWORD' -- /media/bitlocker
+# Attach the VHD and identify the loop device
+LOOP=$(sudo losetup --find --show --partscan "$PWD/Backup.vhd")
+echo "Loop device: $LOOP"
+lsblk "$LOOP"
+
+# Identify the BitLocker partition
+PART=$(lsblk -lnpo NAME,TYPE "$LOOP" | awk '$2=="part"{print $1; exit}')
+[ -n "$PART" ] || PART="$LOOP"
+echo "BitLocker volume: $PART"
+
+# Decrypt and mount the BitLocker volume
+sudo dislocker -V "$PART" -u'PASSWORD' -- /media/bitlocker
 sudo mount -o loop /media/bitlocker/dislocker-file /media/bitlockermount
 ```
 
@@ -159,5 +169,6 @@ Access the files through `/media/bitlockermount`. Unmount after use:
 ```bash
 sudo umount /media/bitlockermount
 sudo umount /media/bitlocker
+sudo losetup -d "$LOOP"
 ```
 
