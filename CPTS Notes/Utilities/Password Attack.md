@@ -70,3 +70,33 @@ hashcat -a 0 -m 0 1b0556a75770563578569ae21392630c /usr/share/wordlists/rockyou.
 ```bash
 hashcat -a 3 -m 0 1e293d6912d074c0fd15844d803400dd '?u?l?l?l?l?d?s'
 ```
+
+## Creating Custom Wordlist
+
+- https://hashcat.net/wiki/doku.php?id=rule_based_attack
+
+```bash
+cat custom.rule
+
+:
+c
+so0
+c so0
+sa@
+c sa@
+c sa@ so0
+$!
+$! c
+$! so0
+$! sa@
+$! c so0
+$! c sa@
+$! so0 sa@
+$! c so0 sa@
+```
+
+```bash
+hashcat --force password.list -r custom.rule --stdout | sort -u > mut_password.list
+```
+
+#
