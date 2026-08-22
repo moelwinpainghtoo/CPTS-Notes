@@ -37,3 +37,36 @@ hashid -j 193069ceb0461e1d40d216e32c79c70
 
 ## Hashcat
 
+### Hash Identification
+
+```bash
+hashcat --help
+
+# identify hash
+hashid -m '$1$FNr44XZC$wQxY6HHLrgrGX0e1195k.1'
+
+# rule file location
+ls -l /usr/share/hashcat/rules
+```
+
+### Apply Rule
+
+```bash
+hashcat -a 0 -m 0 1b0556a75770563578569ae21392630c /usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rules/best64.rule
+```
+
+### Mask attack
+
+| Symbol | Charset                             |
+| ------ | ----------------------------------- |
+| ?l     | abcdefghijklmnopqrstuvwxyz          |
+| ?u     | ABCDEFGHIJKLMNOPQRSTUVWXYZ          |
+| ?d     | 0123456789                          |
+| ?h     | 0123456789abcdef                    |
+| ?H     | 0123456789ABCDEF                    |
+| ?s     | «space»!"#$%&'()*+,-./:;<=>?@[]^_`{ |
+| ?a     | ?l?u?d?s                            |
+| ?b     | 0x00 - 0xff                         |
+```bash
+hashcat -a 3 -m 0 1e293d6912d074c0fd15844d803400dd '?u?l?l?l?l?d?s'
+```
