@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Custom Wordlists.md",
+                "file": "CPTS Notes/Utilities/Password Attack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -225,12 +225,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0ad3b72cef29845d",
+  "active": "0431eaae405d10a6",
   "lastOpenFiles": [
+    "CPTS Notes/Utilities/Custom Wordlists.md",
     "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMB.md",
-    "CPTS Notes/Utilities/Custom Wordlists.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMTP.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/DNS.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/MySQL & MSSQL.md",

@@ -176,6 +176,14 @@ sudo losetup -d "$LOOP"
 - https://github.com/ihebski/DefaultCreds-cheat-sheet
 - https://www.softwaretestinghelp.com/default-router-username-and-password-list/
 
+Check in tools folder first.
 
+```bash
+git clone https://github.com/ihebski/DefaultCreds-cheat-sheet
+cd DefaultCreds-cheat-sheet
+uv venv
+uv pip install -r requirements.txt
+./creds search mysql
+```
 
 
