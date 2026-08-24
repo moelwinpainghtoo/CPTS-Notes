@@ -49,8 +49,7 @@
               "title": "Windows Privilege Escalation"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dumping lsass",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -188,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+                "file": "CPTS Notes/Utilities/File Transfer.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,10 +225,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b9608182f5bd9cc7",
+  "active": "4ab18e2466770fab",
   "lastOpenFiles": [
-    "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+    "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/Utilities/Custom Wordlists.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMB.md",
