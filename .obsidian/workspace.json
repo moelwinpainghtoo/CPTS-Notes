@@ -49,8 +49,7 @@
               "title": "Windows Privilege Escalation"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Credential Hunting.md",
+                "file": "CPTS Notes/Utilities/File Transfer.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -225,10 +224,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0431eaae405d10a6",
+  "active": "4ab18e2466770fab",
   "lastOpenFiles": [
-    "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
+    "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/AD/Notes.md",
