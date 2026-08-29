@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "admin mode",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -105,8 +105,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -188,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+                "file": "CPTS Notes/Utilities/Password Attack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,11 +225,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b9608182f5bd9cc7",
+  "active": "0431eaae405d10a6",
   "lastOpenFiles": [
+    "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/Utilities/Password Attack.md",
-    "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/AD/Notes.md",
