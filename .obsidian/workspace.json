@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +87,7 @@
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+                "file": "CPTS Notes/Utilities/Password Attack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -225,10 +225,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e45d054718532e33",
+  "active": "0ad3b72cef29845d",
   "lastOpenFiles": [
-    "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+    "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/Utilities/Custom Wordlists.md",
