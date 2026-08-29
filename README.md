@@ -59,4 +59,4 @@
 ---
 
 ### 🛠️ Utilities
-- [Credential Harvesting](CPTS%20Notes/Utilities/Credential%20Harvesting.md)
+- [Credential Hunting](Credential%20Hunting.md)
