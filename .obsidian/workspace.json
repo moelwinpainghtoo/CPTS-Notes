@@ -84,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "disableres",
+                "query": "rubeus",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -226,11 +226,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0431eaae405d10a6",
+  "active": "b9608182f5bd9cc7",
   "lastOpenFiles": [
     "CPTS Notes/Utilities/Credential Hunting.md",
-    "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
     "CPTS Notes/Utilities/Password Attack.md",
+    "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
     "CPTS Notes/Utilities/Web Proxies.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "Untitled",
