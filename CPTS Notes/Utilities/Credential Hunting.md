@@ -390,6 +390,8 @@ python3.9 firefox_decrypt.py
 Snaffler.exe -s
 
 Invoke-HuntSMBShares -Threads 100 -OutputDirectory c:\Users\Public
+
+findstr /S /I /M /C:"passw" "\\DC01.inlanefreight.local\IT\*.txt"
 ```
 
 ### Linux
