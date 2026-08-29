@@ -378,3 +378,24 @@ python3.9 firefox_decrypt.py
 | `tcp.stream eq 53`                                | Filters for a specific TCP stream. Helps track a conversation between two hosts.                                                                                                     |
 | `eth.addr == 00:11:22:33:44:55`                   | Filters packets from/to a specific MAC address.                                                                                                                                      |
 | `ip.src == 192.168.24.3 && ip.dst == 56.48.210.3` | Filters traffic between two specific IP addresses. Helps track communication between specific hosts.                                                                                 |
+
+## Network Shares
+
+### From Windows
+
+- https://github.com/SnaffCon/Snaffler
+- https://github.com/NetSPI/PowerHuntShares
+
+```powershell
+Snaffler.exe -s
+
+Invoke-HuntSMBShares -Threads 100 -OutputDirectory c:\Users\Public
+```
+
+### Linux
+
+- https://github.com/blacklanternsecurity/MANSPIDER.git
+
+```bash
+nxc smb 10.129.234.121 -u mendres -p 'Inlanefreight2025!' --spider IT --content --pattern "passw"
+```
