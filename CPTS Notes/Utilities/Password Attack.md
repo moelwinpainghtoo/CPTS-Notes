@@ -335,12 +335,43 @@ Rubeus.exe asktgt /user:john /domain:inlanefreight.htb /aes256:9279bcbd40db957a0
 
 ## Linux
 
-### Check Domain Joined
+### Check Machine is Domain Joined?
 
 - https://web.archive.org/web/20210624040251/https://www.2daygeek.com/how-to-identify-that-the-linux-server-is-integrated-with-active-directory-ad/
 
 ```bash
 realm list
-
+# check process
 ps -ef | grep -i "winbind\|sssd"
+# check nsswitch.conf
+cat /etc/nsswitch.conf | grep -i "sss\|winbind\|ldap"
 ```
+
+### Finding Kerberos tickets in Linux
+
+#### Keytab file
+
+Keytab file located by default at `/etc/krb5.keytab`.
+
+- To use a keytab file, we must have read and write (rw) privileges on the file.
+
+```bash
+# Using Find to search for files with keytab in the name
+find / -name *keytab* -ls 2>/dev/null
+
+# Identifying KeyTab files in Cronjobs
+# check scripts used (keytab file may be there with different extension like .kt)
+crontab -l
+```
+
+#### ccache files
+
+```bash
+# Reviewing environment variables for ccache files
+env | grep -i krb5
+# Searching for ccache files in /tmp
+ls -la /tmp
+```
+
+## Abusing KeyTab Files
+
