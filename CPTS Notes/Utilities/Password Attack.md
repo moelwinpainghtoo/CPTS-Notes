@@ -359,6 +359,7 @@ Keytab file located by default at `/etc/krb5.keytab`.
 ```bash
 # Using Find to search for files with keytab in the name
 find / -name *keytab* -ls 2>/dev/null
+find / -type f -iname '*keytab*' -readable -writable -ls 2>/dev/null
 
 # Identifying KeyTab files in Cronjobs
 # check scripts used (keytab file may be there with different extension like .kt)
