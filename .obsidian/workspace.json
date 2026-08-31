@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "hijack",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -119,7 +119,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -201,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Password Attack.md",
+                "file": "CPTS Notes/Utilities/Credential Hunting.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -239,13 +240,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0431eaae405d10a6",
+  "active": "e45d054718532e33",
   "lastOpenFiles": [
+    "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Utilities/File Transfer.md",
-    "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
     "CPTS Notes/Utilities/Web Proxies.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "Untitled",
