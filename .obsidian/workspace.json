@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Credential Hunting.md",
+                "file": "CPTS Notes/Utilities/Password Attack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -239,10 +239,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e45d054718532e33",
+  "active": "0431eaae405d10a6",
   "lastOpenFiles": [
-    "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
+    "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
