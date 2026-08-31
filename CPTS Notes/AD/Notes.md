@@ -16,6 +16,8 @@ sudo ./proxy -selfcert
 # In ligolo console:
 ifcreate --name ligolo
 route_add --name ligolo --route 192.168.2.0/24
+
+listener_add --addr 0.0.0.0:8080 --to 127.0.0.1:8000 --tcp
 ```
 
 ## Misc
