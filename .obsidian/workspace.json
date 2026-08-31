@@ -63,7 +63,8 @@
               "title": "Windows Privilege Escalation"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -201,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/File Transfer.md",
+                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -239,14 +240,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ab18e2466770fab",
+  "active": "eb08b8d95fedb2a2",
   "lastOpenFiles": [
     "CPTS Notes/Utilities/Credential Hunting.md",
+    "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
-    "CPTS Notes/Utilities/Password Attack.md",
-    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/Utilities/Web Proxies.md",
     "Untitled",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
