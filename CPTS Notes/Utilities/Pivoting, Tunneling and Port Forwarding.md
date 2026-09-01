@@ -231,6 +231,11 @@ dnscat2> window -i 1
 ```bash
 git clone https://github.com/jpillora/chisel.git
 
+wget https://github.com/jpillora/chisel/releases/download/v1.11.8/chisel_1.11.8_linux_amd64.gz
+gunzip chisel_1.11.8_linux_amd64.gz
+chmod +x chisel_1.11.8_linux_amd64
+mv chisel_1.11.8_linux_amd64 chisel
+
 # Running the Chisel Server on the Pivot Host
 # proxychains need to be socks5 127.0.0.1 1080
 ./chisel server -v -p 1234 --socks5
