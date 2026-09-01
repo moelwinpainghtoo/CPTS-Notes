@@ -127,3 +127,10 @@ socat tcp-l:8001 tcp-l:8000,fork,reuseaddr & (# run on local attacking machine)
 ./socat tcp:ATTACKING_IP:8001 tcp:TARGET_IP:TARGET_PORT,fork &
 ```
 
+# Plink
+
+- https://www.proxifier.com/
+
+```bash
+plink -ssh -D 9050 ubuntu@10.129.15.50
+```
