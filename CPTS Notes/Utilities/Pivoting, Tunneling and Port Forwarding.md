@@ -74,7 +74,7 @@ run
 # Need to configure proxychains.conf if needed
 ```
 
-## Add a Route with AutoRoute Module
+## AutoRoute Module
 
 ```bash
 # Select the AutoRoute post-exploitation module
