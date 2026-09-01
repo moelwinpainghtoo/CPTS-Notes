@@ -20,3 +20,7 @@ tail -4 /etc/proxychains.conf
 # forward pivothost's port 8080 to local port 8000
 ssh -R <InternalIPofPivotHost>:8080:0.0.0.0:8000 ubuntu@<ipAddressofTarget> -vN
 ```
+
+
+# Meterpreter
+
