@@ -49,8 +49,7 @@
               "title": "Notes"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/AD/Notes.md",
+                "file": "CPTS Notes/Utilities/File Transfer.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -225,14 +224,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "741d5a1d387916a6",
+  "active": "4ab18e2466770fab",
   "lastOpenFiles": [
+    "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/Methodology/Attack Chains Map.md",
     "CPTS Notes/Methodology/Common Notes.md",
     "CPTS Notes/Methodology/Enumeration/NFS → SMB → RDP → MSSQL → ADMIN.md",
     "CPTS Notes/Methodology/AD/Password Attack.md",
-    "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Methodology/AD",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
