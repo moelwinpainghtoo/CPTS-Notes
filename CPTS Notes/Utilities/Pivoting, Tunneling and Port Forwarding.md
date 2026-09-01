@@ -253,3 +253,9 @@ sudo ./chisel server --reverse -v -p 1234 --socks5
 # Connecting the Chisel Client to our Attack Host
 ./chisel client -v 10.10.14.17:1234 R:socks
 ```
+
+# ICMP Tunneling with SOCKS
+
+```bash
+git clone https://github.com/utoni/ptunnel-ng.git
+```
