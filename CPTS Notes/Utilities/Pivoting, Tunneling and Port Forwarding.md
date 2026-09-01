@@ -195,6 +195,7 @@ gem install bundler
 bundle install
 
 # start dnscat2 server (attack host)
+# host is our own kali IP
 sudo ruby dnscat2.rb --dns host=10.10.14.18,port=53,domain=inlanefreight.local --no-cache
 ```
 
