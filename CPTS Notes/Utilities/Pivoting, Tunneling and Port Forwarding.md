@@ -147,7 +147,7 @@ plink -ssh -D 9050 ubuntu@10.129.15.50
 git clone https://github.com/klsecservices/rpivot.git
 
 # Running server.py from the Attack Host
-# configure proxychains to proxy-port 9050
+# configure proxychains to proxy-port 9050 & socks4
 python2 server.py --proxy-port 9050 --server-port 9999 --server-ip 0.0.0.0
 
 # Transferring rpivot to the Target
@@ -163,4 +163,21 @@ New connection from host 10.129.202.64, source port 35226
 ```bash
 # Connecting to a Web Server using HTTP-Proxy & NTLM Auth
 python client.py --server-ip <IPaddressofTargetWebServer> --server-port 8080 --ntlm-proxy-ip <IPaddressofProxy> --ntlm-proxy-port 8081 --domain <nameofWindowsDomain> --username <username> --password <password>
+```
+
+# Netsh (Windows)
+
+[Netsh](https://docs.microsoft.com/en-us/windows-server/networking/technologies/netsh/netsh-contexts) is a Windows command-line tool that can help with the network configuration of a particular Windows system. Here are just some of the networking related tasks we can use `Netsh` for:
+
+- `Finding routes`
+- `Viewing the firewall configuration`
+- `Adding proxies`
+- `Creating port forwarding rules`
+
+```powershell
+# PortForward
+netsh.exe interface portproxy add v4tov4 listenport=8080 listenaddress=10.129.15.150 connectport=3389 connectaddress=172.16.5.25
+
+# Verify
+netsh.exe interface portproxy show v4tov4
 ```
