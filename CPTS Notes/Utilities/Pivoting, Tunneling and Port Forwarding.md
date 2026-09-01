@@ -182,3 +182,9 @@ netsh.exe interface portproxy add v4tov4 listenport=8080 listenaddress=10.129.15
 # Verify
 netsh.exe interface portproxy show v4tov4
 ```
+
+# DNS Tunneling with Dnscat2
+
+```bash
+
+```
