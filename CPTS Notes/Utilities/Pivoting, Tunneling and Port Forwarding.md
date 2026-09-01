@@ -287,3 +287,20 @@ ssh -p2222 -lubuntu 127.0.0.1
 # Enabling Dynamic Port Forwarding over SSH
 ssh -D 9050 -p2222 -lubuntu 127.0.0.1
 ```
+
+# RDP and SOCKS Tunneling with SocksOverRDP
+
+- https://github.com/nccgroup/SocksOverRDP/releases
+- https://www.proxifier.com/download/#win-tab
+
+Download both SocksOverRDP and proxifier to attack host. This case will be double pivot via RDP.
+
+```bash
+Kali -> Window -> Window -> Window
+```
+
+Frist transfer all files to the window machine.
+
+```powershell
+regsvr32.exe SocksOverRDP-Plugin.dll
+```
