@@ -13,3 +13,10 @@ ssh -D 9050 ubuntu@10.129.202.64
 netstat -antp | grep 1234
 tail -4 /etc/proxychains.conf
 ```
+
+## Reverse Port Forwarding
+
+```bash
+# forward pivothost's port 8080 to local port 8000
+ssh -R <InternalIPofPivotHost>:8080:0.0.0.0:8000 ubuntu@<ipAddressofTarget> -vN
+```
