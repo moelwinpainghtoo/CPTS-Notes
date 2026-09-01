@@ -100,6 +100,14 @@ run autoroute -p
 ## Port Forward
 
 ```bash
-
+# Creating Local TCP Relay
+# forward all traffic from local:3300 to remoteIP:3389
 portfwd add -l 3300 -p 3389 -r 172.16.5.19
+```
+
+### Reverse Port Forward
+
+```bash
+# Reverse Port Forwarding Rules
+portfwd add -R -l 8081 -p 1234 -L 10.10.14.18
 ```
