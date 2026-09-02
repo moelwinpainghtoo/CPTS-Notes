@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -84,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "certutil",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -105,7 +105,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -187,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
+                "file": "CPTS Notes/AD/Notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -225,10 +226,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47302898846a78db",
+  "active": "b9608182f5bd9cc7",
   "lastOpenFiles": [
-    "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
+    "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/Methodology/Attack Chains Map.md",
     "CPTS Notes/Methodology/Common Notes.md",
