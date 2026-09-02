@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/Utilities/File Transfer.md",
+                "file": "CPTS Notes/Methodology/Attack Chains Map.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "File Transfer"
+              "title": "Attack Chains Map"
             }
           },
           {
@@ -63,8 +63,7 @@
               "title": "Credential Hunting"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "certutil",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -119,8 +118,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -202,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
+                "file": "CPTS Notes/Methodology/Attack Chains Map.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -240,13 +238,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47302898846a78db",
+  "active": "4ab18e2466770fab",
   "lastOpenFiles": [
-    "CPTS Notes/AD/Notes.md",
+    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
+    "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
-    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/Methodology/Attack Chains Map.md",
     "CPTS Notes/Methodology/Common Notes.md",
     "CPTS Notes/Methodology/Enumeration/NFS → SMB → RDP → MSSQL → ADMIN.md",
