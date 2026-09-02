@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -202,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Credential Hunting.md",
+                "file": "CPTS Notes/AD/Notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -240,8 +240,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b044d7f5e3ee16c0",
+  "active": "741d5a1d387916a6",
   "lastOpenFiles": [
+    "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/AD/Notes.md",
@@ -251,7 +252,6 @@
     "CPTS Notes/Methodology/Enumeration/NFS → SMB → RDP → MSSQL → ADMIN.md",
     "CPTS Notes/Methodology/AD/Password Attack.md",
     "CPTS Notes/Methodology/AD",
-    "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/Utilities/SQLMap.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
