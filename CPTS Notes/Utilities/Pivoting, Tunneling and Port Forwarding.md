@@ -8,10 +8,13 @@ sudo ./proxy -selfcert
 ifcreate --name ligolo
 route_add --name ligolo --route 192.168.2.0/24
 
-# access local services
+# access local services (use different ip for multiple services on diff subnets)
 route_add --name ligolo --route 240.0.0.1/32
+route_add --name ligolo2 --route 240.0.0.2/32
 
+# add listeners to transfer files
 listener_add --addr 0.0.0.0:8080 --to 127.0.0.1:8000 --tcp
+# pivot to different subnets (only apply to specific agents)
 listener_add --addr 0.0.0.0:4444 --to 127.0.0.1:11601 --tcp
 ```
 
