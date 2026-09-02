@@ -1,4 +1,20 @@
 
+# Ligolo-ng
+
+```bash
+# Terminal 1 - Ligolo server
+sudo ./proxy -selfcert
+# In ligolo console:
+ifcreate --name ligolo
+route_add --name ligolo --route 192.168.2.0/24
+
+# access local services
+route_add --name ligolo --route 240.0.0.1/32
+
+listener_add --addr 0.0.0.0:8080 --to 127.0.0.1:8000 --tcp
+listener_add --addr 0.0.0.0:4444 --to 127.0.0.1:11601 --tcp
+```
+
 # SSH
 
 ## Dynamic Port Forwarding
