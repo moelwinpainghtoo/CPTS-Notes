@@ -296,11 +296,24 @@ ssh -D 9050 -p2222 -lubuntu 127.0.0.1
 Download both SocksOverRDP and proxifier to attack host. This case will be double pivot via RDP.
 
 ```bash
-Kali -> Window -> Window -> Window
+Kali -> Window (Initial) -> Window (Pivot) -> Window (Target)
 ```
 
-Frist transfer all files to the window machine.
+Frist transfer all files to the initial window machine. Load the dll with the admin privilege.
 
 ```powershell
 regsvr32.exe SocksOverRDP-Plugin.dll
 ```
+
+Then, Win + R to call dialog box and type mstsc.exe for RDP connection. Connect to the Pivot host using the credentials (assuming we have). Transfer SocksOverRDP-Server.exe to the pivot window machine and run with the admin privilege.
+
+```powershell
+# Verify at initial window machine
+netstat -antb | findstr 1080
+
+TCP 127.0.0.1:1080 0.0.0.0:0 LISTENING
+```
+
+For proxifier, remember to transfer the whole folder instead of only exe since it requires the dll. Open the proxifier, Click profile, Click proxy servers..., and Add with 127.0.0.1 port 1080. For protocol, use socks4. But can change if that doesn't work. 
+
+We might work with multiple RDP sessions simultaneously. If this is the case, we can access the `Experience` tab in mstsc.exe and set `Performance` to `Modem`.
