@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/Methodology/Attack Chains Map.md",
+                "file": "CPTS Notes/Utilities/Shells.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Attack Chains Map"
+              "title": "Shells"
             }
           },
           {
@@ -200,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Methodology/Attack Chains Map.md",
+                "file": "CPTS Notes/Utilities/Shells.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -240,12 +240,12 @@
   },
   "active": "4ab18e2466770fab",
   "lastOpenFiles": [
+    "CPTS Notes/Methodology/Attack Chains Map.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
-    "CPTS Notes/Methodology/Attack Chains Map.md",
     "CPTS Notes/Methodology/Common Notes.md",
     "CPTS Notes/Methodology/Enumeration/NFS → SMB → RDP → MSSQL → ADMIN.md",
     "CPTS Notes/Methodology/AD/Password Attack.md",
