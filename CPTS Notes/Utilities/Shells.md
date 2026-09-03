@@ -95,9 +95,15 @@ vim
 
 # WebShells
 
+Note: Remove the comments and ASCII art for **AV Bypass**
+
 ```bash
-# Lau
+# Laudanum
+# for aspx web shell, add our IP to allow IP list
+ls /usr/share/laudanum
 
 # Antak
 ls /usr/share/nishang/Antak-WebShell
+# Modify line 14 to set user and pass
+cp /usr/share/nishang/Antak-WebShell/antak.aspx /tmp/shell.aspx
 ```
