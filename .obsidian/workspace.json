@@ -49,8 +49,7 @@
               "title": "Credential Hunting"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/NMAP.md",
+                "file": "CPTS Notes/Utilities/Shells.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -225,10 +224,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47302898846a78db",
+  "active": "4ab18e2466770fab",
   "lastOpenFiles": [
-    "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/NMAP.md",
+    "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/AD/Notes.md",
