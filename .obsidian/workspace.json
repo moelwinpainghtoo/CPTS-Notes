@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/Utilities/File Transfer.md",
+                "file": "CPTS Notes/Reporting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "File Transfer"
+              "title": "Reporting"
             }
           },
           {
@@ -172,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/File Transfer.md",
+                "file": "CPTS Notes/Reporting.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -212,6 +212,8 @@
   },
   "active": "4ab18e2466770fab",
   "lastOpenFiles": [
+    "CPTS Notes/Utilities/File Transfer.md",
+    "CPTS Notes/Reporting.md",
     "CPTS Notes/Utilities/Shells.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/NMAP.md",
     "CPTS Notes/Utilities/Metasploit.md",
@@ -221,7 +223,6 @@
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Utilities/Windows AV.md",
     "CPTS Notes/Methodology/Attack Chains Map.md",
-    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Methodology/Common Notes.md",
     "CPTS Notes/Methodology/Enumeration/NFS → SMB → RDP → MSSQL → ADMIN.md",
@@ -239,7 +240,6 @@
     "CPTS Notes/02 - Exploitation/Service Exploitation/DNS.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/MySQL & MSSQL.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/FTP.md",
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation",
     "CPTS Notes/C2",
     "C2",
