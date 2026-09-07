@@ -69,6 +69,11 @@ Once you discover a live host and enumerate the available services (e.g., via an
 - Appendix
     - **Host & Service Discovery**
 
+172.16.5.5
+| Port | Service | Notes |
+| ------- | ------- | ------- |
+|     |     |    |
+
 ## When A Virtual Host Or Subdomain Is Discovered
 
 You should fill in the appropriate appendix with both the domains provided in the scope of the engagement (if any) and those you discover during your penetration test:
