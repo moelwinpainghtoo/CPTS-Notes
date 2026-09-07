@@ -69,10 +69,14 @@ Once you discover a live host and enumerate the available services (e.g., via an
 - Appendix
     - **Host & Service Discovery**
 
+```
+Extract important open ports from the Nmap output, group by `IP - HOSTNAME`, and format as `Port | Service | Notes`. Keep notes short, only include useful details, and return everything in one copyable code block.
+
 172.16.5.5
 | Port | Service | Notes |
 | ------- | ------- | ------- |
 |     |     |    |
+```
 
 ## When A Virtual Host Or Subdomain Is Discovered
 
