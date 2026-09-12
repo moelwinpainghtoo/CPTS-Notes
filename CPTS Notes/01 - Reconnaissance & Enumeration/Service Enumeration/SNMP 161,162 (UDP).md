@@ -1,5 +1,10 @@
 
 ```bash
+# important to check
+nmap -p161 -sU --script *snmp* 192.168.106.42
+```
+
+```bash
 # Dump SNMP data using community string
 snmpwalk -v2c -c <community> <IP>
 
