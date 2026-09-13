@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pop3",
+                "query": "trackin",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -240,7 +240,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d4588879b8342b6a",
+  "active": "b9608182f5bd9cc7",
   "lastOpenFiles": [
     "CPTS Notes/02 - Exploitation/Web Exploitation/Login Brute Force.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMTP.md",
