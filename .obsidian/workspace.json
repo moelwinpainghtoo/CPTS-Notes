@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dns",
+                "query": "xxe",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -242,11 +242,11 @@
   },
   "active": "d4588879b8342b6a",
   "lastOpenFiles": [
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/DNS 53.md",
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+    "CPTS Notes/02 - Exploitation/Web Exploitation/XXE.md",
+    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/DNS 53.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/DNS.md",
-    "CPTS Notes/02 - Exploitation/Web Exploitation/XXE.md",
     "CPTS Notes/Utilities/SQLMap.md",
     "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/Reporting.md",
