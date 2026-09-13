@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/XXE.md",
+                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/File Inclusion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "XXE"
+              "title": "File Inclusion"
             }
           }
         ],
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "xxe",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -119,8 +119,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -202,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/XXE.md",
+                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/File Inclusion.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -242,8 +241,9 @@
   },
   "active": "d4588879b8342b6a",
   "lastOpenFiles": [
-    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+    "CPTS Notes/02 - Exploitation/Web Exploitation/SQL Injection.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/XXE.md",
+    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/DNS 53.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/DNS.md",
@@ -267,7 +267,6 @@
     "CPTS Notes/01 - Reconnaissance & Enumeration/NMAP.md",
     "CPTS Notes/Utilities/Shells.md",
     "CPTS Notes/Utilities/Metasploit.md",
-    "CPTS Notes/Utilities/Windows AV.md",
     "CPTS Notes/Methodology/AD",
     "Untitled",
     "CPTS Notes/02 - Exploitation/Service Exploitation",
