@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+                "file": "CPTS Notes/AD/AD Enumeration & Attack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Application Exploitation"
+              "title": "AD Enumeration & Attack"
             }
           }
         ],
@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "snmp",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -91,8 +91,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -174,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+                "file": "CPTS Notes/AD/AD Enumeration & Attack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -214,6 +213,8 @@
   },
   "active": "47302898846a78db",
   "lastOpenFiles": [
+    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+    "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SNMP 161,162 (UDP).md",
@@ -227,7 +228,6 @@
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/Reporting.md",
-    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/File Inclusion.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/NMAP.md",
     "CPTS Notes/Utilities/Shells.md",
@@ -240,7 +240,6 @@
     "CPTS Notes/Methodology/AD",
     "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/Utilities/SQLMap.md",
-    "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
     "Untitled",
     "CPTS Notes/02 - Exploitation/Service Exploitation",
     "CPTS Notes/C2",
