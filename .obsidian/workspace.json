@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/Login Brute Force.md",
+                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/XXE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Login Brute Force"
+              "title": "XXE"
             }
           }
         ],
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "xxe",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -119,7 +119,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -201,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/Login Brute Force.md",
+                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/XXE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -241,8 +242,11 @@
   },
   "active": "d4588879b8342b6a",
   "lastOpenFiles": [
-    "CPTS Notes/02 - Exploitation/Web Exploitation/IDOR.md",
+    "CPTS Notes/02 - Exploitation/Service Exploitation/SMTP.md",
+    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/IMAP, POP3 (143,993,110,995).md",
+    "CPTS Notes/Methodology/Enumeration/SNMP → IMAP,POP3 → SSH → MySQL.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Login Brute Force.md",
+    "CPTS Notes/02 - Exploitation/Web Exploitation/IDOR.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/SQL Injection.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/XSS.md",
     "CPTS Notes/Methodology/Attack Chains Map.md",
@@ -260,13 +264,10 @@
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SNMP 161,162 (UDP).md",
-    "CPTS Notes/02 - Exploitation/Service Exploitation/SMTP.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMTP 25,587,465.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RPC 135.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMB.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
-    "CPTS Notes/AD/Notes.md",
-    "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Methodology/AD",
     "Untitled",
     "CPTS Notes/02 - Exploitation/Service Exploitation",
