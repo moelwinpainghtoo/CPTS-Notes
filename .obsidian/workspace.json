@@ -35,8 +35,7 @@
               "title": "AD Enumeration & Attack"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -173,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/AD/AD Enumeration & Attack.md",
+                "file": "CPTS Notes/Reporting.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -211,10 +210,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47302898846a78db",
+  "active": "4ab18e2466770fab",
   "lastOpenFiles": [
-    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/AD/AD Enumeration & Attack.md",
+    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SNMP 161,162 (UDP).md",
