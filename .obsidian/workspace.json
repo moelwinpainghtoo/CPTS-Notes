@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tempering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Application Exploitation"
+              "title": "HTTP Verb Tempering"
             }
           }
         ],
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "drupa",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -119,8 +119,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -202,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tempering.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -242,6 +241,8 @@
   },
   "active": "d4588879b8342b6a",
   "lastOpenFiles": [
+    "CPTS Notes/02 - Exploitation/Web Exploitation/XSS.md",
+    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/IMAP, POP3 (143,993,110,995).md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Login Brute Force.md",
@@ -252,10 +253,8 @@
     "CPTS Notes/Methodology/Enumeration/SNMP → IMAP,POP3 → SSH → MySQL.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/IDOR.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/SQL Injection.md",
-    "CPTS Notes/02 - Exploitation/Web Exploitation/XSS.md",
     "CPTS Notes/Methodology/Attack Chains Map.md",
     "CPTS Notes/Methodology/Web/LFI → Source Code Disclosure → Arbitrary File Upload → File Inclusion → RCE.md",
-    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/DNS 53.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/DNS.md",
     "CPTS Notes/Utilities/SQLMap.md",
