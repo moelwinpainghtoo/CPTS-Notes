@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "wordpress",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -119,8 +119,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -240,7 +239,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d4588879b8342b6a",
+  "active": "0ad3b72cef29845d",
   "lastOpenFiles": [
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
