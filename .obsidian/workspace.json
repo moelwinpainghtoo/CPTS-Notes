@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -239,7 +239,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0ad3b72cef29845d",
+  "active": "4c49587dcf762c2a",
   "lastOpenFiles": [
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
