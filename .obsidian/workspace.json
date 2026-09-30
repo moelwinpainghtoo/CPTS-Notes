@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/AD/AD Enumeration & Attack.md",
+                "file": "CPTS Notes/Utilities/SQLMap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AD Enumeration & Attack"
+              "title": "SQLMap"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "Application Enumeration"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+                "file": "CPTS Notes/Utilities/SQLMap.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -225,10 +224,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ab18e2466770fab",
+  "active": "47302898846a78db",
   "lastOpenFiles": [
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
+    "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+    "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tempering.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/XSS.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/IMAP, POP3 (143,993,110,995).md",
@@ -245,7 +245,6 @@
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/DNS 53.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/DNS.md",
     "CPTS Notes/Utilities/SQLMap.md",
-    "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/Reporting.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Web Enumeration.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
