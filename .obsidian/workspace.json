@@ -49,8 +49,7 @@
               "title": "Application Enumeration"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
+                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/XSS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,10 +225,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4c49587dcf762c2a",
+  "active": "47302898846a78db",
   "lastOpenFiles": [
-    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
+    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/XSS.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Command Injection.md",
