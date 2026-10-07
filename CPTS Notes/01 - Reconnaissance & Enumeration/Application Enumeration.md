@@ -61,6 +61,8 @@ curl -s http://blog.inlanefreight.local/ | grep plugins
 
 ```bash
 sudo wpscan --url http://blog.inlanefreight.local --enumerate u --api-token <token>
+# alternative
+wpscan -e u -t 500 --url http://ir.inlanefreight.local
 ```
 
 # Joomla

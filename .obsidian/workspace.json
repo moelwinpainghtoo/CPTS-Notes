@@ -49,7 +49,8 @@
               "title": "Application Enumeration"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -187,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/XSS.md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -225,18 +226,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47302898846a78db",
+  "active": "4c49587dcf762c2a",
   "lastOpenFiles": [
+    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+    "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
+    "CPTS Notes/02 - Exploitation/Web Exploitation/XSS.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Command Injection.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Login Brute Force.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/SQL Injection.md",
     "CPTS Notes/Utilities/SQLMap.md",
-    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/AD/AD Enumeration & Attack.md",
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tempering.md",
-    "CPTS Notes/02 - Exploitation/Web Exploitation/XSS.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/IMAP, POP3 (143,993,110,995).md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMTP.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMTP 25,587,465.md",
