@@ -49,8 +49,7 @@
               "title": "Application Enumeration"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
+                "file": "CPTS Notes/02 - Exploitation/Web Exploitation/Command Injection.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,13 +225,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ab18e2466770fab",
+  "active": "47302898846a78db",
   "lastOpenFiles": [
+    "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Command Injection.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/XSS.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
-    "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Login Brute Force.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/SQL Injection.md",
     "CPTS Notes/Utilities/SQLMap.md",
