@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/NFS 111,2049.md",
+                "file": "CPTS Notes/Utilities/Shells.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NFS 111,2049"
+              "title": "Shells"
             }
           },
           {
@@ -105,7 +105,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -187,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/NFS 111,2049.md",
+                "file": "CPTS Notes/Utilities/Shells.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -227,11 +228,12 @@
   },
   "active": "4ab18e2466770fab",
   "lastOpenFiles": [
+    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/NFS 111,2049.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Command Injection.md",
-    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/XSS.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Login Brute Force.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/SQL Injection.md",
@@ -252,7 +254,6 @@
     "CPTS Notes/Reporting.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Web Enumeration.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SNMP 161,162 (UDP).md",
     "CPTS Notes/Methodology/AD",
     "Untitled",
     "CPTS Notes/02 - Exploitation/Service Exploitation",
