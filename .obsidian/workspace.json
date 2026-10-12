@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/Utilities/Credential Hunting.md",
+                "file": "CPTS Notes/02 - Exploitation/Service Exploitation/MySQL & MSSQL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Credential Hunting"
+              "title": "MySQL & MSSQL"
             }
           },
           {
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mssql",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -119,7 +119,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -201,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Credential Hunting.md",
+                "file": "CPTS Notes/02 - Exploitation/Service Exploitation/MySQL & MSSQL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -241,8 +242,8 @@
   },
   "active": "4ab18e2466770fab",
   "lastOpenFiles": [
-    "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
+    "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/Utilities/Shells.md",
     "CPTS Notes/AD/AD Enumeration & Attack.md",
