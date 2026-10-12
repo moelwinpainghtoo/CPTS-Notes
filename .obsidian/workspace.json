@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -202,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/AD/AD Enumeration & Attack.md",
+                "file": "CPTS Notes/Utilities/Credential Hunting.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -240,14 +240,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d09f767e26133e6e",
+  "active": "4ab18e2466770fab",
   "lastOpenFiles": [
+    "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/MySQL & MSSQL.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/Utilities/Shells.md",
-    "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
