@@ -63,7 +63,8 @@
               "title": "AD Enumeration & Attack"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -201,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+                "file": "CPTS Notes/AD/AD Enumeration & Attack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -239,11 +240,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47302898846a78db",
+  "active": "d09f767e26133e6e",
   "lastOpenFiles": [
+    "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
-    "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tempering.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tampering.md",
