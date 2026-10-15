@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "keepass",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -118,8 +118,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -239,8 +238,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47302898846a78db",
+  "active": "0ad3b72cef29845d",
   "lastOpenFiles": [
+    "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tempering.md",
+    "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tampering.md",
     "CPTS Notes/Start Here.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMB.md",
@@ -262,11 +263,9 @@
     "CPTS Notes/02 - Exploitation/Web Exploitation/Login Brute Force.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/SQL Injection.md",
     "CPTS Notes/Utilities/SQLMap.md",
-    "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tempering.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/IMAP, POP3 (143,993,110,995).md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMTP.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMTP 25,587,465.md",
-    "CPTS Notes/02 - Exploitation/Web Exploitation/File Inclusion.md",
     "CPTS Notes/Methodology/AD",
     "Untitled",
     "CPTS Notes/02 - Exploitation/Service Exploitation",
