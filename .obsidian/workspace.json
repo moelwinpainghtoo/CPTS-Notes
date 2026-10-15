@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -202,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
+                "file": "CPTS Notes/AD/AD Enumeration & Attack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -240,12 +240,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4c49587dcf762c2a",
+  "active": "d09f767e26133e6e",
   "lastOpenFiles": [
+    "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
-    "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tempering.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tampering.md",
     "CPTS Notes/Start Here.md",
