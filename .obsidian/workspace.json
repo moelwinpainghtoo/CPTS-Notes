@@ -63,8 +63,7 @@
               "title": "AD Enumeration & Attack"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -240,7 +239,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ab18e2466770fab",
+  "active": "47302898846a78db",
   "lastOpenFiles": [
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
