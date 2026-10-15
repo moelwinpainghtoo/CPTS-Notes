@@ -241,6 +241,7 @@
   },
   "active": "47302898846a78db",
   "lastOpenFiles": [
+    "CPTS Notes/Start Here.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMB.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
@@ -266,7 +267,6 @@
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMTP.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMTP 25,587,465.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/File Inclusion.md",
-    "CPTS Notes/02 - Exploitation/Web Exploitation/XXE.md",
     "CPTS Notes/Methodology/AD",
     "Untitled",
     "CPTS Notes/02 - Exploitation/Service Exploitation",
