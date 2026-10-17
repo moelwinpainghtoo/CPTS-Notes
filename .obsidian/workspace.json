@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RPC 135.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux Privilege Escalation"
+              "title": "RPC 135"
             }
           },
           {
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "UAC ",
+                "query": "135",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RPC 135.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -241,6 +241,7 @@
   },
   "active": "47302898846a78db",
   "lastOpenFiles": [
+    "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
@@ -258,7 +259,6 @@
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Command Injection.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/File Upload.md",
-    "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/NFS 111,2049.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/XSS.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Login Brute Force.md",
