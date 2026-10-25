@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/Utilities/Credential Hunting.md",
+                "file": "CPTS Notes/02 - Exploitation/API Exploitation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Credential Hunting"
+              "title": "API Exploitation"
             }
           },
           {
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "135",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -119,8 +119,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -202,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Credential Hunting.md",
+                "file": "CPTS Notes/02 - Exploitation/API Exploitation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -242,9 +241,12 @@
   },
   "active": "4ab18e2466770fab",
   "lastOpenFiles": [
+    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
+    "CPTS Notes/02 - Exploitation/API Exploitation.md",
+    "CPTS Notes/02 - Exploitation/API.md",
+    "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Utilities/Pivoting, Tunneling and Port Forwarding.md",
-    "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/File Upload.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RPC 135.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
@@ -257,7 +259,6 @@
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/MySQL & MSSQL.md",
     "CPTS Notes/Utilities/Shells.md",
-    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/Command Injection.md",
@@ -266,8 +267,6 @@
     "CPTS Notes/02 - Exploitation/Web Exploitation/Login Brute Force.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/SQL Injection.md",
     "CPTS Notes/Utilities/SQLMap.md",
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/IMAP, POP3 (143,993,110,995).md",
-    "CPTS Notes/02 - Exploitation/Service Exploitation/SMTP.md",
     "CPTS Notes/Methodology/AD",
     "Untitled",
     "CPTS Notes/02 - Exploitation/Service Exploitation",
