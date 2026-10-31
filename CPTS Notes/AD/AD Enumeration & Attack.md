@@ -53,7 +53,7 @@ PS C:\htb> Import-Module .\Inveigh.ps1
 PS C:\htb> (Get-Command Invoke-Inveigh).Parameters
 
 Invoke-Inveigh Y -NBNS Y -ConsoleOutput Y -FileOutput Y
-Invoke-Inveigh -IP 172.16.6.100 -NBNS Y -HTTP N -ConsoleOutput N -FileOutput Y
+Invoke-Inveigh -IP 172.16.6.100 -NBNS Y N -ConsoleOutput N -FileOutput Y
 
 Get-Content .\Inveigh-Log.txt -Tail 30 -Wait
 
