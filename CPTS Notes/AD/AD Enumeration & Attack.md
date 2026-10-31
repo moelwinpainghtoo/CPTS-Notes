@@ -53,6 +53,10 @@ PS C:\htb> Import-Module .\Inveigh.ps1
 PS C:\htb> (Get-Command Invoke-Inveigh).Parameters
 
 Invoke-Inveigh Y -NBNS Y -ConsoleOutput Y -FileOutput Y
+Invoke-Inveigh -IP 172.16.6.100 -NBNS Y -HTTP N -ConsoleOutput N -FileOutput Y
+
+Get-Content .\Inveigh-Log.txt -Tail 30 -Wait
+
 """
 As we can see, the tool starts and shows which options are enabled by default and which 
 are not. The options with a [+] are default and enabled by default and the ones with a 
