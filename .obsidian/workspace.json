@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/API Exploitation.md",
+                "file": "CPTS Notes/AD/AD Enumeration & Attack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -239,10 +239,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ab18e2466770fab",
+  "active": "d09f767e26133e6e",
   "lastOpenFiles": [
-    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/02 - Exploitation/API Exploitation.md",
+    "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/02 - Exploitation/API.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
