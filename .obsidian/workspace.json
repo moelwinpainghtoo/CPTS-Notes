@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/Utilities/Shells.md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shells"
+              "title": "SMB 445"
             }
           },
           {
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "smbclient",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -119,7 +119,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -241,12 +242,13 @@
   },
   "active": "4c49587dcf762c2a",
   "lastOpenFiles": [
+    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
+    "CPTS Notes/Utilities/Shells.md",
+    "CPTS Notes/AD/Notes.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/AD/AD Enumeration & Attack.md",
-    "CPTS Notes/AD/Notes.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
-    "CPTS Notes/Utilities/Shells.md",
     "CPTS Notes/02 - Exploitation/API Exploitation.md",
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/02 - Exploitation/API.md",
@@ -257,7 +259,6 @@
     "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tampering.md",
     "CPTS Notes/Start Here.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMB.md",
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/MySQL & MSSQL.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
