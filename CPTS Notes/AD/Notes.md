@@ -105,6 +105,8 @@ bloodhound-ce-python -u 'user' -p 'pass' -d 'domain' -c 'All' -ns '10.5.10.10' -
 bloodhound-ce-python -u 'user@domain1' -p 'pass' -d 'domain2' -c 'All' -ns '10.5.10.12' --zip
 ```
 
+
+
 ## DCSync
 
 ```bash
