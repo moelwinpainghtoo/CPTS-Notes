@@ -84,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "SeMachineAccountPrivilege",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -226,7 +226,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d09f767e26133e6e",
+  "active": "b9608182f5bd9cc7",
   "lastOpenFiles": [
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/AD/AD Enumeration & Attack.md",
