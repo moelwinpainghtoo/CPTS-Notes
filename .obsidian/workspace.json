@@ -84,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "nginx",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -225,7 +225,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ab18e2466770fab",
+  "active": "0ad3b72cef29845d",
   "lastOpenFiles": [
     "CPTS Notes/Utilities/SQLMap.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/MySQL 3306.md",
