@@ -10,7 +10,7 @@ dig any <domain> @<ns>
 dig axfr <domain> @<ns>
 
 # Reverse Lookup
-dig -x <IP>
+dig -x 10.129.227.180 @10.129.227.180
 
 # Automated DNS enumeration and subdomain brute-force
 dnsenum --dnsserver <ns> --enum -p 0 -s 0 -o out.txt -f wordlist.txt <domain>
