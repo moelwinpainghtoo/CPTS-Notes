@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -188,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
+                "file": "CPTS Notes/Utilities/Credential Hunting.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,8 +226,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d09f767e26133e6e",
+  "active": "4ab18e2466770fab",
   "lastOpenFiles": [
+    "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RDP 3389.md",
@@ -242,7 +243,6 @@
     "CPTS Notes/02 - Exploitation/Service Exploitation/DNS.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMTP.md",
     "CPTS Notes/03 - Post Exploitation/Untitled.md",
-    "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RPC 135.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
