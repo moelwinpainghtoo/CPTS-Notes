@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMTP 25,587,465.md",
+                "file": "CPTS Notes/AD/Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SMTP 25,587,465"
+              "title": "Notes"
             }
           },
           {
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMTP 25,587,465.md",
+                "file": "CPTS Notes/AD/Notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,6 +226,7 @@
   },
   "active": "47302898846a78db",
   "lastOpenFiles": [
+    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMTP 25,587,465.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/File Inclusion.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/Utilities/SQLMap.md",
@@ -234,7 +235,6 @@
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/DNS 53.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/DNS.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMTP.md",
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMTP 25,587,465.md",
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
