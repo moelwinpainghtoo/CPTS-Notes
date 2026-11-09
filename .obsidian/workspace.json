@@ -49,7 +49,8 @@
               "title": "Windows Privilege Escalation"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -186,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/File Transfer.md",
+                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -224,12 +225,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47302898846a78db",
+  "active": "d09f767e26133e6e",
   "lastOpenFiles": [
+    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
-    "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RDP 3389.md",
