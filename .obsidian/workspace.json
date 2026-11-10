@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RDP 3389.md",
+                "file": "CPTS Notes/AD/Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RDP 3389"
+              "title": "Notes"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "AD Enumeration & Attack"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/AD/AD Enumeration & Attack.md",
+                "file": "CPTS Notes/AD/Notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,15 +225,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d09f767e26133e6e",
+  "active": "47302898846a78db",
   "lastOpenFiles": [
+    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RDP 3389.md",
+    "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Utilities/Credential Hunting.md",
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RDP 3389.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/AD/Notes.md",
-    "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/Utilities/SQLMap.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMTP 25,587,465.md",
     "CPTS Notes/02 - Exploitation/Web Exploitation/File Inclusion.md",
