@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -188,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Credential Hunting.md",
+                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,11 +226,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ab18e2466770fab",
+  "active": "d09f767e26133e6e",
   "lastOpenFiles": [
+    "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RDP 3389.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
-    "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/Utilities/File Transfer.md",
     "CPTS Notes/Utilities/Password Attack.md",
     "CPTS Notes/AD/Notes.md",
