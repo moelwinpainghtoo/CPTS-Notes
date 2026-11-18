@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -188,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
+                "file": "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,8 +226,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ab18e2466770fab",
+  "active": "960a888bb9317926",
   "lastOpenFiles": [
+    "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
@@ -250,7 +251,6 @@
     "CPTS Notes/02 - Exploitation/Service Exploitation/DNS.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/SMTP.md",
     "CPTS Notes/03 - Post Exploitation/Untitled.md",
-    "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/RPC 135.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/SMB 445.md",
     "CPTS Notes/Utilities/Shells.md",
