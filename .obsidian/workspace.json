@@ -84,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rdp enable",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -105,8 +105,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -226,7 +225,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "960a888bb9317926",
+  "active": "0ad3b72cef29845d",
   "lastOpenFiles": [
     "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
     "CPTS Notes/03 - Post Exploitation/Linux Privilege Escalation.md",
