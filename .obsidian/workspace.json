@@ -49,7 +49,8 @@
               "title": "Windows Privilege Escalation"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/AD/AD Enumeration & Attack.md",
+                "file": "CPTS Notes/AD/Notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -224,11 +225,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47302898846a78db",
+  "active": "0ad3b72cef29845d",
   "lastOpenFiles": [
+    "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/AD/Notes.md",
     "CPTS Notes/02 - Exploitation/Service Exploitation/RDP.md",
-    "CPTS Notes/AD/AD Enumeration & Attack.md",
     "CPTS Notes/02 - Exploitation/API Exploitation.md",
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/NFS 111,2049.md",
