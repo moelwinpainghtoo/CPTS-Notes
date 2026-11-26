@@ -227,6 +227,7 @@
   },
   "active": "4ab18e2466770fab",
   "lastOpenFiles": [
+    "CPTS Notes/hydra.restore",
     "CPTS Notes//package-lock.json",
     "CPTS Notes/",
     "CPTS Notes/02 - Exploitation/Web Exploitation/File Inclusion.md",
@@ -251,7 +252,6 @@
     "CPTS Notes/tmp-pdfs/good-05.png",
     "CPTS Notes/tmp-pdfs/good-04.png",
     "CPTS Notes/tmp-pdfs",
-    "CPTS Notes/tmp-pdf-text",
     "CPTS Notes/Utilities/Credential Hunting.md",
     "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
     "CPTS Notes/Utilities/SQLMap.md",
