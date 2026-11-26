@@ -227,6 +227,8 @@
   },
   "active": "4ab18e2466770fab",
   "lastOpenFiles": [
+    "CPTS Notes/ssh_exploit.py",
+    "CPTS Notes/ssh_exec.py",
     "CPTS Notes/driver_test.url",
     "CPTS Notes/driver_test.scf",
     "CPTS Notes/tmp_precious_check.py",
@@ -270,8 +272,6 @@
     "CPTS Notes/02 - Exploitation/Service Exploitation/DNS.md",
     "CPTS Notes/Methodology/AD",
     "Untitled",
-    "CPTS Notes/02 - Exploitation/Service Exploitation",
-    "CPTS Notes/C2",
-    "C2"
+    "CPTS Notes/02 - Exploitation/Service Exploitation"
   ]
 }
