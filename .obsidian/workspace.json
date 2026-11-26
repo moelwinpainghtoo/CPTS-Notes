@@ -227,6 +227,8 @@
   },
   "active": "4ab18e2466770fab",
   "lastOpenFiles": [
+    "CPTS Notes/driver_test.url",
+    "CPTS Notes/driver_test.scf",
     "CPTS Notes/tmp_precious_check.py",
     "CPTS Notes/02 - Exploitation/Web Exploitation/File Upload.md",
     "CPTS Notes/02 - Exploitation/Application Exploitation.md",
@@ -270,8 +272,6 @@
     "Untitled",
     "CPTS Notes/02 - Exploitation/Service Exploitation",
     "CPTS Notes/C2",
-    "C2",
-    "CPTS Notes/03 - Post Exploitation",
-    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration"
+    "C2"
   ]
 }
