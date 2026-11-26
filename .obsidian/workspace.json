@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/IMAP, POP3 (143,993,110,995).md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IMAP, POP3 (143,993,110,995)"
+              "title": "Application Enumeration"
             }
           }
         ],
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/IMAP, POP3 (143,993,110,995).md",
+                "file": "CPTS Notes/01 - Reconnaissance & Enumeration/Application Enumeration.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -227,6 +227,7 @@
   },
   "active": "960a888bb9317926",
   "lastOpenFiles": [
+    "CPTS Notes/01 - Reconnaissance & Enumeration/Service Enumeration/IMAP, POP3 (143,993,110,995).md",
     "CPTS Notes/03 - Post Exploitation/Windows Privilege Escalation.md",
     "CPTS Notes/Cloud/K8.md",
     "CPTS Notes/hydra.restore",
